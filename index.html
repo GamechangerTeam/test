@@ -1,0 +1,3599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>GC - Segments</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- FULLPAGE JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.28/fullpage.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.28/fullpage.min.js"></script>
+
+    <!-- FONT -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js.js" defer></script>
+  </head>
+
+  <body>
+    <ul class="right_navigation" id="menu">
+      <li data-menuanchor="1"><a href="#1">Старт</a></li>
+      <li data-menuanchor="2"><a href="#2">Проблемы</a></li>
+      <li data-menuanchor="3"><a href="#3">Возможности</a></li>
+      <li data-menuanchor="4"><a href="#4">Внедрение</a></li>
+      <li data-menuanchor="5"><a href="#5">Настройка</a></li>
+      <li data-menuanchor="6"><a href="#6">Кейсы</a></li>
+      <li data-menuanchor="7"><a href="#7">Работы</a></li>
+      <li data-menuanchor="8"><a href="#8">Вопросы</a></li>
+    </ul>
+
+    <main id="main">
+      <div class="section hero">
+        <div class="container">
+          <img
+            src="https://static.tildacdn.com/tild3164-3137-4031-a530-663936363862/1c-Bitrix24_integrat.png"
+            alt="быстрая интеграция 1с и Битрикс24 "
+            class="hero__pageLogo"
+          />
+          <h1>для сферы оптовой торговли</h1>
+          <p>
+            Используйте платформу, которая вывела более 10 миллионов компаний на
+            новый уровень.
+          </p>
+          <div class="hero__statistics">
+            <div class="hero__statistics__card">
+              <span class="counter" data-target="35" data-format="percent"
+                >0%</span
+              >
+              <span>компаний по СНГ</span>
+            </div>
+            <span class="hero__statistics--vertical-line"></span>
+
+            <div class="hero__statistics__card">
+              <span class="counter" data-target="10" data-format="million"
+                >0</span
+              >
+              <span
+                >организаций <br />
+                всего мира</span
+              >
+            </div>
+            <span class="hero__statistics--vertical-line"></span>
+            <div class="hero__statistics__card">
+              <span class="counter" data-target="100" data-format="percent"
+                >0%</span
+              >
+              <span>увеличение эффективности</span>
+            </div>
+          </div>
+          <div class="hero__btns">
+            <button class="hero__calculator-btn">
+              Калькулятор эффективности
+              <img
+                src="https://static.tildacdn.com/tild3232-3235-4432-b131-336165636163/calculator.svg"
+                alt="calculator icon svg"
+              />
+            </button>
+            <button class="open_left_section" data-name="consultation">
+              Получить консультацию
+
+              <img
+                src="https://static.tildacdn.com/tild3536-3965-4430-a239-383035353738/support.svg"
+                alt="support icon svg"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section pain">
+        <div class="container">
+          <h2><span class="green_text">Решайте проблемы</span> с Битрикс24</h2>
+          <ul>
+            <li>
+              <img
+                src="https://static.tildacdn.com/tild3866-3735-4839-a539-313665653834/numbers-1.svg"
+                class="pain__number"
+                alt=""
+              />
+              <div class="pain__block">
+                <h3>
+                  Перерасход на зарплаты из-за отсутствие ясного понимания
+                  производительности сотрудников.
+                </h3>
+                <div class="pain__card">
+                  <div class="pain__card__header">
+                    <h4>Воронка продаж Битрикс24 <span>150&nbsp;000₸</span></h4>
+                    <img
+                      src="https://static.tildacdn.com/tild3339-6235-4634-a331-626230363866/down_arrow.svg"
+                      alt=""
+                      class="pain__arrow"
+                    />
+                  </div>
+                  <div class="pain__card__body">
+                    <div class="pain__card__text-wrapper">
+                      <p>
+                        Полный контроль над отделом продаж без необходимости
+                        личного присутствия;
+                      </p>
+                      <p>Один менеджер способен выполнять работу троих;</p>
+                      <p>
+                        Система отслеживает эффективность каждого сотрудника.
+                      </p>
+                    </div>
+                    <div class="pain__card__footer">
+                      <p>внедрение <span class="pain__days">2</span> дня</p>
+                      <button
+                        class="open_left_section"
+                        data-name="consultation"
+                      >
+                        Заказать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://static.tildacdn.com/tild3866-3735-4839-a539-313665653834/numbers-1.svg"
+                class="pain__number"
+                alt=""
+              />
+              <div class="pain__block">
+                <h3>
+                  Перерасход на зарплаты из-за отсутствие ясного понимания
+                  производительности сотрудников.
+                </h3>
+                <div class="pain__card">
+                  <div class="pain__card__header">
+                    <h4>Воронка продаж Битрикс24 <span>150&nbsp;000₸</span></h4>
+                    <img
+                      src="https://static.tildacdn.com/tild3339-6235-4634-a331-626230363866/down_arrow.svg"
+                      alt=""
+                      class="pain__arrow"
+                    />
+                  </div>
+                  <div class="pain__card__body">
+                    <div class="pain__card__text-wrapper">
+                      <p>
+                        Полный контроль над отделом продаж без необходимости
+                        личного присутствия;
+                      </p>
+                      <p>Один менеджер способен выполнять работу троих;</p>
+                      <p>
+                        Система отслеживает эффективность каждого сотрудника.
+                      </p>
+                    </div>
+                    <div class="pain__card__footer">
+                      <p>внедрение <span class="pain__days">2</span> дня</p>
+                      <button
+                        class="open_left_section"
+                        data-name="consultation"
+                      >
+                        Заказать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://static.tildacdn.com/tild3866-3735-4839-a539-313665653834/numbers-1.svg"
+                class="pain__number"
+                alt=""
+              />
+              <div class="pain__block">
+                <h3>
+                  Перерасход на зарплаты из-за отсутствие ясного понимания
+                  производительности сотрудников.
+                </h3>
+                <div class="pain__card">
+                  <div class="pain__card__header">
+                    <h4>Воронка продаж Битрикс24 <span>150&nbsp;000₸</span></h4>
+                    <img
+                      src="https://static.tildacdn.com/tild3339-6235-4634-a331-626230363866/down_arrow.svg"
+                      alt=""
+                      class="pain__arrow"
+                    />
+                  </div>
+                  <div class="pain__card__body">
+                    <div class="pain__card__text-wrapper">
+                      <p>
+                        Полный контроль над отделом продаж без необходимости
+                        личного присутствия;
+                      </p>
+                      <p>Один менеджер способен выполнять работу троих;</p>
+                      <p>
+                        Система отслеживает эффективность каждого сотрудника.
+                      </p>
+                    </div>
+                    <div class="pain__card__footer">
+                      <p>внедрение <span class="pain__days">2</span> дня</p>
+                      <button
+                        class="open_left_section"
+                        data-name="consultation"
+                      >
+                        Заказать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section tarifs-block" id="tarifs-block">
+        <div class="container">
+          <h2>Цены за настройку системы</h2>
+          <ul class="tarifs-block__list">
+            <li class="item">
+              <div class="item__wrapper">
+                <div class="item__header">
+                  <span class="item__header__number hide_on_tablet"> 1 </span>
+                  <div class="item__header__text">
+                    <h3>Пакет для продуктовых магазинов</h3>
+                    <p>Срок выполнения 3 дня</p>
+                  </div>
+                  <span class="item__header__price">200&nbsp;000₸</span>
+                  <div class="plus-icon">
+                    <span class="plus-icon--vertical-line"></span>
+                    <span class="plus-icon--horizontal-line"></span>
+                  </div>
+                </div>
+                <div class="item__main">
+                  <span class="item__main--top-line">&nbsp;</span>
+                  <p>
+                    Вы получите инструмент для управление вашего магазина
+                    который включает в себя все необходимые операции. Он дает
+                    полный контроль над остатками и продажами.
+                  </p>
+                  <h3>В него входит</h3>
+                  <div class="item__main__content">
+                    <p>
+                      Настройка номенклатур до 500ед. (товары, клиенты,
+                      поставщики)
+                    </p>
+                    <p>
+                      Настройка складских операции (реализации, списания,
+                      оприходования, прием товара)
+                    </p>
+                    <p>Настройка аукционных товаров</p>
+                    <p>Настройка отчетности</p>
+                    <p>Обучение в парильном проведении инвентаризации</p>
+                    <p>1 месяц бесплатной технической поддержки</p>
+                  </div>
+                  <h3>Опционально - 50&nbsp;000₸</h3>
+                  <p>Срок выполнения 2 дня</p>
+                  <div class="item__main__content">
+                    <p>
+                      Корректировка товарной номенклатуры (до 1000 ед.). Наша
+                      команда внесет корректное описание товаров на русском и
+                      казахском языках для всего Вашего ассортимента. Также
+                      обучим Ваш персонал и предоставим вам подробную инструкцию
+                      для самостоятельного добавления новых товарных позиций в
+                      будущем.
+                    </p>
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__wrapper">
+                <div class="item__header">
+                  <span class="item__header__number hide_on_tablet"> 2 </span>
+                  <div class="item__header__text">
+                    <h3>Пакет для мини-маркетов</h3>
+                    <p>Срок выполняния 4 дня</p>
+                  </div>
+                  <span class="item__header__price">300&nbsp;000₸</span>
+                  <div class="plus-icon">
+                    <span class="plus-icon--vertical-line"></span>
+                    <span class="plus-icon--horizontal-line"></span>
+                  </div>
+                </div>
+                <div class="item__main">
+                  <span class="item__main--top-line">&nbsp;</span>
+                  <p>
+                    Вы получите инструмент для управление вашего магазина
+                    который включает в себя все необходимые операции. Он дает
+                    полный контроль над остатками и продажами.
+                  </p>
+                  <h3>В него входит</h3>
+
+                  <div class="item__main__content">
+                    <p>
+                      Настройка номенклатур до 500ед. (товары, клиенты,
+                      поставщики)
+                    </p>
+                    <p>
+                      Настройка складских операции (реализации, списания,
+                      оприходования, прием товара)
+                    </p>
+                    <p>Настройка аукционных товаров</p>
+                    <p>Настройка отчетности</p>
+                    <p>Обучение в парильном проведении инвентаризации</p>
+                    <p>1 месяц бесплатной технической поддержки</p>
+                    <p>Интеграция с интернет-магазином</p>
+                  </div>
+                  <h3>Опционально - 100&nbsp;000₸</h3>
+                  <p>Срок выполнения 4 дня</p>
+                  <div class="item__main__content">
+                    <p>
+                      Корректировка товарной номенклатуры (до 1000 ед.) Наша
+                      команда внесет корректное описание товаров на русском и
+                      казахском языках для всего Вашего ассортимента. Также
+                      обучим Ваш персонал и предоставим вам подробную инструкцию
+                      для самостоятельного добавления новых товарных позиций в
+                      будущем.
+                    </p>
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__wrapper">
+                <div class="item__header">
+                  <span class="item__header__number hide_on_tablet"> 3 </span>
+                  <div class="item__header__text">
+                    <h3>Пакет для супермаркетов (категория B)</h3>
+                    <p>Срок выполнения 4 дня</p>
+                  </div>
+                  <span class="item__header__price">400&nbsp;000₸</span>
+
+                  <!-- <div class="item__header__price--grid">
+                    <span class="item__header__price"
+                      ><i> 1 город</i> <br />
+                      330&nbsp;000₸
+                    </span>
+                    <span class="item__header__price"
+                      ><i> 2 города</i> <br />
+                      650&nbsp;000₸
+                    </span>
+                    <span class="item__header__price"
+                      ><i> 3 города</i> <br />
+                      900&nbsp;000₸
+                    </span>
+                  </div> -->
+                  <div class="plus-icon">
+                    <span class="plus-icon--vertical-line"></span>
+                    <span class="plus-icon--horizontal-line"></span>
+                  </div>
+                </div>
+                <div class="item__main">
+                  <span class="item__main--top-line">&nbsp;</span>
+                  <p>
+                    Вы получите инструмент для управление вашего супермаркета
+                    который включает в себя все необходимые операции. Он дает
+                    полный контроль над остатками и продажами.
+                  </p>
+                  <h3>В него входит</h3>
+
+                  <div class="item__main__content">
+                    <p>
+                      Настройка номенклатур до 5000ед. (товары, клиенты,
+                      поставщики)
+                    </p>
+                    <p>
+                      Настройка складских операции (реализации, списания,
+                      оприходования, прием товара)
+                    </p>
+                    <p>Настройка аукционных товаров</p>
+                    <p>Настройка отчетности</p>
+                    <p>Интеграция с онлайн-касс (до 4)</p>
+                    <p>Интеграция с интернет-магазином</p>
+                    <p>Обучение в парильном проведении инвентаризации</p>
+                    <p>1 месяц бесплатной технической поддержки</p>
+                  </div>
+                  <h3>Опционально - 400&nbsp;000₸</h3>
+                  <p>Срок выполнения 4 дня</p>
+                  <div class="item__main__content">
+                    <p>
+                      Корректировка товарной номенклатуры (до 5000 ед.) Наша
+                      команда внесет корректное описание товаров на русском и
+                      казахском языках для всего Вашего ассортимента. Также
+                      обучим Ваш персонал и предоставим вам подробную инструкцию
+                      для самостоятельного добавления новых товарных позиций в
+                      будущем.
+                    </p>
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__wrapper">
+                <div class="item__header">
+                  <span class="item__header__number hide_on_tablet"> 4 </span>
+                  <div class="item__header__text">
+                    <h3>
+                      Пакет для супермаркетов (категория В) Автоматизация +
+                    </h3>
+                    <p>Срок выполнения 10 дней</p>
+                  </div>
+                  <span class="item__header__price">800&nbsp;000₸</span>
+                  <div class="plus-icon">
+                    <span class="plus-icon--vertical-line"></span>
+                    <span class="plus-icon--horizontal-line"></span>
+                  </div>
+                </div>
+                <div class="item__main">
+                  <span class="item__main--top-line">&nbsp;</span>
+                  <p>
+                    Вы получите инструмент для управление и автоматизации вашего
+                    супермаркета избавьтесь от множество проблем розничной
+                    торговли. Экономьте ресурсы и время и увеличьте доход!
+                  </p>
+                  <h3>В него входит</h3>
+
+                  <div class="item__main__content">
+                    <p>
+                      Настройка номенклатур до 5000ед. (товары, клиенты,
+                      поставщики)
+                    </p>
+                    <p>
+                      Настройка складских операции (реализации, списания,
+                      оприходования, прием товара)
+                    </p>
+                    <p>Настройка аукционных товаров</p>
+                    <p>Настройка отчетности</p>
+                    <p>Интеграция с онлайн-касс (до 4)</p>
+                    <p>Интеграция с интернет-магазином</p>
+                    <p>Обучение в парильном проведении инвентаризации</p>
+                    <p>
+                      Автоматизация супермаркета (смена ценников, пополнение
+                      полок, план уборки, обучение сотрудников)
+                    </p>
+                    <p>1 месяц бесплатной технической поддержки</p>
+                  </div>
+                  <h3>Опционально - 200&nbsp;000₸</h3>
+                  <p>Срок выполнения 4 дня</p>
+                  <div class="item__main__content">
+                    <p>
+                      Корректировка товарной номенклатуры (до 5000 ед.) Наша
+                      команда внесет корректное описание товаров на русском и
+                      казахском языках для всего Вашего ассортимента. Также
+                      обучим Ваш персонал и предоставим вам подробную инструкцию
+                      для самостоятельного добавления новых товарных позиций в
+                      будущем
+                    </p>
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="item open_left_section"
+              data-name="consultation"
+              id="individual"
+            >
+              <div class="item__wrapper">
+                <div class="item__header">
+                  <span class="item__header__number hide_on_tablet"> 4 </span>
+                  <div class="item__header__text">
+                    <h3>Индивидуальное решение</h3>
+                  </div>
+                  <span class="item__header__price">от 250&nbsp;000₸</span>
+                  <div class="plus-icon">
+                    <span class="plus-icon--vertical-line"></span>
+                    <span class="plus-icon--horizontal-line"></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item" id="licenses">
+              <div class="item__wrapper">
+                <div class="item__header">
+                  <img
+                    src="https://static.tildacdn.com/tild6564-6266-4237-b937-626639346631/certificate.png"
+                    alt="licenses png icon"
+                  />
+                  <div class="item__header__text">
+                    <h3>Лицензии - Bitrix24</h3>
+                    <p>ежемесячная/ ежегодная оплата</p>
+                  </div>
+                  <span class="item__header__price">от 9&nbsp;600₸</span>
+                  <div class="plus-icon">
+                    <span class="plus-icon--vertical-line"></span>
+                    <span class="plus-icon--horizontal-line"></span>
+                  </div>
+                </div>
+                <div class="item__main">
+                  <span class="item__main--top-line">&nbsp;</span>
+                  <div class="licenses__top-btns">
+                    <button
+                      class="change-licenses-tarif active"
+                      data-name="Бесплатный"
+                    >
+                      Бесплатный
+                    </button>
+                    <button class="change-licenses-tarif" data-name="Базовый">
+                      Базовый
+                    </button>
+                    <button
+                      class="change-licenses-tarif"
+                      data-name="Стандартный"
+                    >
+                      Стандартный
+                    </button>
+                    <button
+                      class="change-licenses-tarif"
+                      data-name="Профессиональный"
+                    >
+                      Профессиональный
+                    </button>
+                    <button
+                      class="change-licenses-tarif"
+                      data-name="Энтерпрайз"
+                    >
+                      Энтерпрайз
+                    </button>
+                  </div>
+                  <div class="licenses-wrapper">
+                    <div class="licenses__settings">
+                      <p class="licenses__settings--item1">
+                        Тариф доступен всем пользователям
+                      </p>
+                      <span
+                        class="vertical-line licenses__settings--item2"
+                      ></span>
+                      <p class="licenses__settings--item3">
+                        Диск 5 ГБ
+                        <span class="little-text">
+                          Без общего диска для компаний
+                        </span>
+                      </p>
+                      <span
+                        class="vertical-line licenses__settings--item4"
+                      ></span>
+                      <p class="licenses__settings--item5">
+                        Бесплатно за всех пользователей
+                      </p>
+                    </div>
+                    <div class="item__main__content">
+                      <p>Внутренний ИИ</p>
+                      <p>
+                        Календарь для каждого сотрудника для планирования
+                        мероприятий
+                      </p>
+                      <p>Организационная структура компании</p>
+                      <p>Виртуальный отдел управления персоналом</p>
+                      <p>
+                        Новостная лента в стиле Facebook для внутренних
+                        коммуникаций.
+                      </p>
+                      <p>Внутренний мессенджер с функциями WhatsApp</p>
+                      <p>
+                        Контакт-центр - интегрирующий все каналы заказов в
+                        единую систему управления.
+                      </p>
+                      <p>Конструктор сайтов с бесплатным хостингом</p>
+                      <p>База знаний компании</p>
+                      <p>Каталог товаров</p>
+                      <p>Автоматизация продаж через CRM</p>
+                      <p>Чек-ин на работе с геопозицией</p>
+                      <p>Работа с виртуальными задачами</p>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- <button class="open_left_section" data-name="consultation">
+            Получить консультацию
+          </button> -->
+          <div class="tarifs-block__background"></div>
+        </div>
+      </div>
+
+      <div class="section bitrix24-block">
+        <div class="container">
+          <h2>
+            Битрикс24 контролирует
+            <span class="green_text">выполнение всех процессов</span> в компании
+          </h2>
+
+          <img src="./number_1.svg" alt="" />
+
+          <button class="open_left_section" data-name="consultation">
+            Получить консультацию
+            <img
+              src="https://static.tildacdn.com/tild3536-3965-4430-a239-383035353738/support.svg"
+              alt="support icon svg"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="section implementation-block">
+        <div class="container">
+          <h2>Внедрение системы без головной боли</h2>
+          <div class="swiper" id="implementationBlockSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gradient-container">
+                <div class="gradient-border"></div>
+                <div class="implementation-block__card">
+                  <div class="implementation-block__number">1</div>
+                  <h3>Анализ и определение</h3>
+                  <p>
+                    Мы проанализируем текущую структуру процессов вашей компании
+                    и определим процент эффективности.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide gradient-container">
+                <div class="gradient-border"></div>
+                <div class="implementation-block__card">
+                  <div class="implementation-block__number">2</div>
+                  <h3>Индивидуальное предложение</h3>
+                  <p>
+                    Мы предложим Вам уникальное решение для Вашей компани.
+                    Утверждаем его с вами, назначаем цели и сроки.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide gradient-container">
+                <div class="gradient-border"></div>
+
+                <div class="implementation-block__card">
+                  <div class="implementation-block__number">3</div>
+                  <h3>Разработка</h3>
+                  <p>
+                    Система будет разработана с максимальной точностью и
+                    скоростью. Наш отдел отправит ежедневные отчеты о
+                    проделанной работе.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide gradient-container">
+                <div class="gradient-border"></div>
+                <div class="implementation-block__card">
+                  <div class="implementation-block__number">4</div>
+                  <h3>Тестирование и внедрение</h3>
+                  <p>
+                    Мы тестируем весь функционал до мелочей и внедряем готовый и
+                    рабочий продукт.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide gradient-container">
+                <div class="gradient-border"></div>
+                <div class="implementation-block__card">
+                  <div class="implementation-block__number">5</div>
+                  <h3>Обучение и обслуживание</h3>
+                  <p>
+                    Мы обучаем руководителей и конечных пользователей
+                    функцоиналом программы нашим авторским методом.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="implementation-block__btns">
+            <button class="open_left_section" data-name="privacy-policy">
+              Политика конфиденциальности
+            </button>
+            <button class="open_left_section" data-name="service">
+              Обслуживание
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section guarantee-block">
+        <div class="container">
+          <h2>
+            Мы даем <span class="green_text">100% гарантию</span> на успешное
+          </h2>
+          <ul>
+            <li>
+              <span class="green_text">10+</span>
+              <p>реализованных кейсов</p>
+            </li>
+            <li>
+              <span class="green_text">50+</span>
+              <p>
+                авторских модуля для Битрикс24 были созданы нашими
+                разработчиками
+              </p>
+            </li>
+            <li>
+              <span class="green_text">1000+</span>
+              <p>пользователей работают успешно на нами настроенных системах</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section who_trust-block">
+        <div class="container">
+          <div class="carousel-track">
+            <div class="carousel-track-left">
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3461-3538-4136-a632-356262353862/gamechanger__66.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3565-3566-4535-b063-323664663666/gamechanger__55.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6530-3033-4366-b432-643236383161/gamechanger__67.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3735-6362-4130-b132-313038373062/gamechanger__73.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3636-6339-4162-a435-633839393130/gamechanger__72.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3539-6263-4332-a138-356437623134/gamechanger__60.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6432-3864-4636-b131-313634623534/gamechanger__54.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3134-6339-4032-a263-623836333065/brilliance.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6564-3037-4232-b534-643863313536/gamechanger__53.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6337-6636-4665-b365-303633663765/gamechanger__57.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6133-3837-4239-a439-383631623765/gamechanger__7.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3034-3165-4665-a361-616239366565/gamechanger__58.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6136-6365-4634-b565-323463646134/gamechanger__62.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3461-3538-4136-a632-356262353862/gamechanger__66.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3565-3566-4535-b063-323664663666/gamechanger__55.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6530-3033-4366-b432-643236383161/gamechanger__67.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3735-6362-4130-b132-313038373062/gamechanger__73.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3636-6339-4162-a435-633839393130/gamechanger__72.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3539-6263-4332-a138-356437623134/gamechanger__60.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6432-3864-4636-b131-313634623534/gamechanger__54.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3134-6339-4032-a263-623836333065/brilliance.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6564-3037-4232-b534-643863313536/gamechanger__53.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6337-6636-4665-b365-303633663765/gamechanger__57.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6133-3837-4239-a439-383631623765/gamechanger__7.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3034-3165-4665-a361-616239366565/gamechanger__58.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6136-6365-4634-b565-323463646134/gamechanger__62.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+            </div>
+            <div class="carousel-track-right">
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3534-3638-4534-b966-316565353334/marten.jpg"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3036-6339-4131-a230-336336383435/kts.svg"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6336-6635-4930-b736-623161663938/44e9784e-4e8a-4ea7-8.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6665-6661-4062-b862-626664363030/gamechanger__56.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3666-3338-4837-a532-356232626130/gamechanger__59.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3566-3066-4639-a531-663032336639/qdh6l5fkw3583i16evkb.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6136-6266-4137-b139-313665653331/gamechanger__69.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3938-6432-4531-b636-343331386461/gamechanger__68.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3363-3432-4964-b838-613533303436/gamechanger__16.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6336-3335-4939-b339-643131663566/gamechanger__71.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3565-6138-4535-a434-626136346432/city.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3134-3636-4235-a432-356635383139/gamechanger__65.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3534-3638-4534-b966-316565353334/marten.jpg"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3036-6339-4131-a230-336336383435/kts.svg"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6336-6635-4930-b736-623161663938/44e9784e-4e8a-4ea7-8.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6665-6661-4062-b862-626664363030/gamechanger__56.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3666-3338-4837-a532-356232626130/gamechanger__59.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3566-3066-4639-a531-663032336639/qdh6l5fkw3583i16evkb.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6136-6266-4137-b139-313665653331/gamechanger__69.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3938-6432-4531-b636-343331386461/gamechanger__68.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3363-3432-4964-b838-613533303436/gamechanger__16.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild6336-3335-4939-b339-643131663566/gamechanger__71.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3565-6138-4535-a434-626136346432/city.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.tildacdn.pro/tild3134-3636-4235-a432-356635383139/gamechanger__65.png"
+                  loading="lazy"
+                  alt="company logo png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section possibilities-block">
+        <div class="container">
+          <h2>Возможности системы</h2>
+          <div
+            class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+            id="possibilitiesBlockSwiper"
+          >
+            <div
+              class="swiper-wrapper"
+              id="swiper-wrapper-ad74a4a8f61010095"
+              aria-live="polite"
+            >
+              <div
+                class="swiper-slide swiper-slide-active"
+                style="width: 565px; margin-right: 30px"
+                role="group"
+                aria-label="1 / 2"
+              >
+                <div class="possibilities-block__card">
+                  <div class="possibilities-block__header">
+                    <svg
+                      width="60"
+                      height="60"
+                      viewBox="0 0 60 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="60"
+                        height="60"
+                        rx="12"
+                        fill="black"
+                        fill-opacity="0.04"
+                      ></rect>
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="59"
+                        height="59"
+                        rx="11.5"
+                        stroke="url(#paint0_linear_146_881)"
+                        stroke-opacity="0.16"
+                      ></rect>
+                      <path
+                        opacity="0.975"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.0314 17.2813C23.3977 17.1358 24.5332 17.5733 25.4376 18.5938C25.5959 18.8033 25.7105 19.0324 25.7814 19.2813C25.7765 19.3937 25.7453 19.4979 25.6876 19.5938C24.288 20.7886 23.4963 22.3094 23.3126 24.1563C23.2605 24.2917 23.1668 24.3854 23.0314 24.4375C21.1605 24.5239 19.8793 23.701 19.1876 21.9688C18.7466 20.1867 19.2779 18.7805 20.7814 17.75C21.1889 17.5485 21.6056 17.3922 22.0314 17.2813Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        opacity="0.975"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M36.781 17.2812C38.9975 17.1749 40.362 18.1957 40.8748 20.3437C41.0294 22.265 40.2169 23.5775 38.4373 24.2812C37.9377 24.4415 37.4272 24.4936 36.906 24.4375C36.8166 24.4084 36.7437 24.3563 36.6873 24.2812C36.5022 22.3591 35.6794 20.7758 34.2185 19.5312C34.1272 19.2874 34.1584 19.0583 34.3123 18.8437C34.9352 17.9964 35.7581 17.4756 36.781 17.2812Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        opacity="0.984"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M29.2189 19.9688C31.7347 19.783 33.4742 20.8455 34.4377 23.1563C35.0318 25.4789 34.3547 27.3226 32.4064 28.6875C30.1586 29.8069 28.1481 29.484 26.3752 27.7188C25.2052 26.2206 24.9552 24.5748 25.6252 22.7813C26.3511 21.2365 27.5491 20.299 29.2189 19.9688Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        opacity="0.98"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.9689 25.8438C21.0998 25.8142 22.2248 25.8454 23.3439 25.9375C23.6375 26.9725 24.1062 27.9204 24.7501 28.7813C25.0023 29.0125 25.2315 29.2625 25.4376 29.5313C25.5183 29.792 25.4454 29.9899 25.2189 30.125C23.6087 30.4869 22.2441 31.2681 21.1251 32.4688C20.7321 32.9945 20.3466 33.5258 19.9689 34.0625C18.4908 34.3757 17.2929 33.9486 16.3751 32.7813C16.1423 32.3952 15.9964 31.9785 15.9376 31.5313C15.6811 29.4942 16.3582 27.8588 17.9689 26.625C18.5936 26.2391 19.2603 25.9786 19.9689 25.8438Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        opacity="0.98"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M36.7189 25.8438C37.8025 25.8333 38.8858 25.8438 39.9689 25.875C41.8853 26.2293 43.1666 27.323 43.8126 29.1563C44.0946 30.2001 44.0946 31.2418 43.8126 32.2813C43.3871 33.2696 42.6475 33.8633 41.5939 34.0625C41.0522 34.1042 40.5106 34.1042 39.9689 34.0625C39.5911 33.5258 39.2057 32.9945 38.8126 32.4688C37.6518 31.2213 36.2351 30.4088 34.5626 30.0313C34.4738 29.8731 34.453 29.7064 34.5001 29.5313C35.2358 28.8161 35.7983 27.9828 36.1876 27.0313C36.3045 26.7018 36.4086 26.3684 36.5001 26.0313C36.5717 25.9603 36.6446 25.8978 36.7189 25.8438Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        opacity="0.99"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M26.4689 31.7813C28.95 31.7526 31.4292 31.7839 33.9064 31.875C36.679 32.5226 38.3561 34.2414 38.9377 37.0313C39.0563 37.907 39.0563 38.782 38.9377 39.6563C38.4257 41.5531 37.1861 42.574 35.2189 42.7188C31.7189 42.6354 28.2189 42.6354 24.7189 42.7188C22.5922 42.5188 21.3317 41.373 20.9377 39.2813C20.6364 36.7664 21.4385 34.6935 23.3439 33.0625C24.2827 32.374 25.3244 31.9469 26.4689 31.7813Z"
+                        fill="black"
+                      ></path>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_146_881"
+                          x1="30"
+                          y1="0"
+                          x2="30"
+                          y2="60"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop></stop>
+                          <stop offset="1" stop-opacity="0.12"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <h3 class="possibilities-block__head">
+                      Привлечение новых клиентов
+                    </h3>
+                  </div>
+                  <p class="possibilities-block__main">
+                    Автоматизированная система увеличивает конверсию до 500%:
+                    Используйте проверенные решения для роста вашего бизнеса.
+                    Наша система не только снижает затраты на зарплату, но и
+                    значительно увеличивает приток новых клиентов. Подписывайте
+                    договоры с ЭЦП прямо в системе за считанные минуты. Все
+                    результаты звонков и встреч фиксируются и доступны для
+                    подробной отчетности, что помогает эффективно управлять
+                    процессами.
+                  </p>
+                </div>
+                <div class="possibilities-block__card">
+                  <div class="possibilities-block__header">
+                    <svg
+                      width="60"
+                      height="61"
+                      viewBox="0 0 60 61"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.5"
+                        width="60"
+                        height="60"
+                        rx="12"
+                        fill="black"
+                        fill-opacity="0.04"
+                      ></rect>
+                      <rect
+                        x="0.5"
+                        y="1"
+                        width="59"
+                        height="59"
+                        rx="11.5"
+                        stroke="url(#paint0_linear_146_900)"
+                        stroke-opacity="0.16"
+                      ></rect>
+                      <g clip-path="url(#clip0_146_900)">
+                        <path
+                          opacity="0.987"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M27.219 14.4688C29.0523 14.4688 30.8856 14.4688 32.719 14.4688C33.4791 14.7189 33.9479 15.2397 34.1252 16.0312C33.9973 17.1268 34.2057 18.1476 34.7502 19.0938C35.8763 20.5176 37.3033 20.9447 39.0315 20.375C39.5718 20.0527 40.1343 19.7819 40.719 19.5625C41.5515 19.4439 42.2078 19.7251 42.6877 20.4062C43.4585 21.7396 44.2294 23.0729 45.0002 24.4062C45.4343 25.3839 45.2571 26.2276 44.469 26.9375C43.5141 27.3304 42.7745 27.9658 42.2502 28.8438C41.4362 31.2359 42.1758 32.9546 44.469 34C45.2297 34.6583 45.4276 35.4603 45.0627 36.4062C44.2451 37.854 43.4118 39.2915 42.5627 40.7188C41.9184 41.3824 41.1579 41.5595 40.2815 41.25C39.6188 40.7833 38.8896 40.4708 38.094 40.3125C36.4324 40.2463 35.2136 40.9443 34.4377 42.4062C34.3289 42.6909 34.2456 42.9826 34.1877 43.2812C34.1669 43.8229 34.146 44.3646 34.1252 44.9062C33.9479 45.6978 33.4791 46.2186 32.719 46.4688C30.8856 46.4688 29.0523 46.4688 27.219 46.4688C26.4588 46.2186 25.99 45.6978 25.8127 44.9062C25.9406 43.8107 25.7322 42.7899 25.1877 41.8438C24.0611 40.4197 22.6341 39.9926 20.9065 40.5625C20.3661 40.8848 19.8037 41.1556 19.219 41.375C18.3864 41.4936 17.7301 41.2124 17.2502 40.5312C16.4794 39.1979 15.7085 37.8646 14.9377 36.5312C14.5037 35.5536 14.6807 34.7099 15.469 34C17.6163 33.0491 18.3975 31.4345 17.8127 29.1562C17.5674 28.5365 17.182 28.0261 16.6565 27.625C16.2708 27.3801 15.875 27.1509 15.469 26.9375C14.7082 26.2793 14.5103 25.4772 14.8752 24.5312C15.6928 23.0835 16.5261 21.646 17.3752 20.2188C18.0195 19.5551 18.78 19.378 19.6565 19.6875C20.3191 20.1542 21.0483 20.4667 21.844 20.625C23.5055 20.6912 24.7243 19.9932 25.5002 18.5312C25.609 18.2466 25.6923 17.9549 25.7502 17.6562C25.771 17.1146 25.7919 16.5729 25.8127 16.0312C25.99 15.2397 26.4588 14.7189 27.219 14.4688ZM29.1565 22.4688C32.5528 22.3177 35.1466 23.6719 36.9377 26.5312C38.5435 29.7262 38.2727 32.747 36.1252 35.5938C33.8743 38.0662 31.1139 38.9307 27.844 38.1875C24.4451 37.0804 22.4971 34.7574 22.0002 31.2188C21.8376 27.8456 23.1814 25.2726 26.0315 23.5C27.0209 22.9722 28.0625 22.6285 29.1565 22.4688Z"
+                          fill="black"
+                        ></path>
+                        <path
+                          opacity="0.978"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M29.2813 24.2813C31.9424 24.1273 33.9737 25.169 35.375 27.4063C36.5561 29.8012 36.3894 32.0929 34.875 34.2813C33.1209 36.3243 30.923 37.043 28.2813 36.4375C26.1042 35.7605 24.6771 34.3333 24 32.1563C23.4143 29.6851 24.0288 27.5706 25.8438 25.8125C26.8442 24.9689 27.9901 24.4585 29.2813 24.2813ZM32.4063 28.1563C31.263 28.9861 30.1172 29.8194 28.9688 30.6563C28.5615 30.3011 28.1865 29.9156 27.8438 29.5C27.5327 29.271 27.1993 29.2294 26.8438 29.375C26.3844 29.6698 26.249 30.0761 26.4375 30.5938C27.0497 31.3311 27.706 32.029 28.4063 32.6875C28.698 32.8125 28.9896 32.8125 29.2813 32.6875C30.6948 31.6734 32.0802 30.6213 33.4375 29.5313C33.7334 28.6072 33.3897 28.1489 32.4063 28.1563Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_146_900"
+                          x1="30"
+                          y1="0.5"
+                          x2="30"
+                          y2="60.5"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop></stop>
+                          <stop offset="1" stop-opacity="0.12"></stop>
+                        </linearGradient>
+                        <clipPath id="clip0_146_900">
+                          <rect
+                            width="32"
+                            height="32"
+                            fill="white"
+                            transform="translate(14 14.5)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h3 class="possibilities-block__head">Полный контроль</h3>
+                  </div>
+                  <p class="possibilities-block__main">
+                    Контакт-центр для интеграции всех источников заказов:
+                    Управляйте заказами из WhatsApp, Telegram, Instagram, сайта,
+                    Kaspi, Ozon и Satu в одной системе. Получите полный контроль
+                    над коммуникацией и улучшите анализ эффективности
+                    сотрудников. Оптимизируйте распределение задач и следите за
+                    результатами работы без необходимости покидать офис.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide swiper-slide-next"
+                role="group"
+                aria-label="2 / 2"
+                style="width: 565px; margin-right: 30px"
+              >
+                <div class="possibilities-block__card">
+                  <div class="possibilities-block__header">
+                    <svg
+                      width="60"
+                      height="60"
+                      viewBox="0 0 60 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="60"
+                        height="60"
+                        rx="12"
+                        fill="black"
+                        fill-opacity="0.04"
+                      ></rect>
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="59"
+                        height="59"
+                        rx="11.5"
+                        stroke="url(#paint0_linear_146_911)"
+                        stroke-opacity="0.16"
+                      ></rect>
+                      <g clip-path="url(#clip0_146_911)">
+                        <path
+                          opacity="0.989"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M21.8438 13.9688C24.2604 13.9688 26.6771 13.9688 29.0938 13.9688C29.0938 16.6146 29.0938 19.2604 29.0938 21.9062C24.9479 21.9167 20.802 21.9062 16.6562 21.875C18.0208 19.5104 19.3854 17.1458 20.75 14.7812C21.0377 14.3988 21.4023 14.128 21.8438 13.9688Z"
+                          fill="black"
+                        ></path>
+                        <path
+                          opacity="0.988"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M30.9062 13.9688C33.3021 13.9688 35.6979 13.9688 38.0938 13.9688C38.5352 14.128 38.8998 14.3988 39.1875 14.7812C40.5521 17.1354 41.9167 19.4896 43.2812 21.8438C39.1564 21.9062 35.0314 21.9271 30.9062 21.9062C30.9062 19.2604 30.9062 16.6146 30.9062 13.9688Z"
+                          fill="black"
+                        ></path>
+                        <path
+                          opacity="0.996"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M42.2188 45.9688C34.0521 45.9688 25.8854 45.9688 17.7188 45.9688C16.8447 45.7301 16.2926 45.1676 16.0625 44.2812C16.0313 37.4271 16.0208 30.5729 16.0313 23.7188C25.3229 23.7188 34.6146 23.7188 43.9062 23.7188C43.9167 30.5729 43.9062 37.4271 43.875 44.2812C43.6449 45.1676 43.0928 45.7301 42.2188 45.9688ZM33.4062 30.5938C34.3117 30.6968 34.6138 31.1759 34.3125 32.0312C32.6354 33.7083 30.9583 35.3854 29.2813 37.0625C28.9388 37.3203 28.5846 37.3412 28.2188 37.125C27.375 36.2812 26.5313 35.4375 25.6875 34.5938C25.3906 33.8335 25.6406 33.3544 26.4375 33.1562C26.599 33.194 26.7553 33.2461 26.9063 33.3125C27.4688 33.875 28.0313 34.4375 28.5938 35C28.6563 35.0417 28.7188 35.0417 28.7813 35C30.1563 33.625 31.5312 32.25 32.9062 30.875C33.0687 30.7628 33.2354 30.6691 33.4062 30.5938Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_146_911"
+                          x1="30"
+                          y1="0"
+                          x2="30"
+                          y2="60"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop></stop>
+                          <stop
+                            offset="1"
+                            stop-color="#FFFF00"
+                            stop-opacity="0"
+                          ></stop>
+                        </linearGradient>
+                        <clipPath id="clip0_146_911">
+                          <rect
+                            width="32"
+                            height="32"
+                            fill="white"
+                            transform="translate(14 14)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h3 class="possibilities-block__head">Прием заказов</h3>
+                  </div>
+                  <p class="possibilities-block__main">
+                    Сократите время обработки заявок до 2 минут: Автоматизация
+                    процессов с помощью роботов ускоряет работу и поддерживает
+                    ваших сотрудников. Непрерывная цепочка
+                    клиент-менеджер-склад-курьер гарантирует быстрое и
+                    качественное обслуживание ваших клиентов.
+                  </p>
+                </div>
+                <div class="possibilities-block__card" id="possibilities__last">
+                  <div class="possibilities-block__header">
+                    <svg
+                      width="60"
+                      height="61"
+                      viewBox="0 0 60 61"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.5"
+                        width="60"
+                        height="60"
+                        rx="12"
+                        fill="black"
+                        fill-opacity="0.04"
+                      ></rect>
+                      <rect
+                        x="0.5"
+                        y="1"
+                        width="59"
+                        height="59"
+                        rx="11.5"
+                        stroke="url(#paint0_linear_146_924)"
+                        stroke-opacity="0.16"
+                      ></rect>
+                      <path
+                        opacity="0.994"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M26.9688 16.0938C31.1354 16.0833 35.3021 16.0938 39.4688 16.125C41.2357 16.4336 42.3086 17.4648 42.6875 19.2188C42.7292 26.7188 42.7292 34.2188 42.6875 41.7188C42.3007 43.5014 41.2069 44.5327 39.4062 44.8125C33.3646 44.8542 27.3229 44.8542 21.2813 44.8125C19.5406 44.5093 18.4677 43.4989 18.0625 41.7812C18.0313 36.5521 18.0208 31.3229 18.0313 26.0938C19.948 26.1042 21.8647 26.0938 23.7813 26.0625C25.4644 25.7544 26.4956 24.7648 26.875 23.0938C26.9646 20.7619 26.9959 18.4286 26.9688 16.0938ZM25.9688 29.4688C29.5313 29.4583 33.0938 29.4688 36.6562 29.5C37.2346 29.5679 37.5471 29.8908 37.5938 30.4688C37.5471 31.0467 37.2346 31.3696 36.6562 31.4375C33.0938 31.4792 29.5313 31.4792 25.9688 31.4375C25.1035 31.2383 24.8431 30.7279 25.1875 29.9063C25.404 29.6681 25.6644 29.5223 25.9688 29.4688ZM25.7188 34.8438C27.6772 34.8333 29.6355 34.8438 31.5938 34.875C32.2793 35.2234 32.4356 35.7338 32.0625 36.4062C31.8984 36.5769 31.7004 36.6915 31.4688 36.75C29.5729 36.7917 27.6771 36.7917 25.7813 36.75C25.0436 36.4543 24.8457 35.9438 25.1875 35.2188C25.3544 35.0686 25.5316 34.9436 25.7188 34.8438Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        opacity="0.975"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M24.9062 16.8438C24.979 18.8748 24.9894 20.9165 24.9375 22.9688C24.7146 23.5458 24.3084 23.9312 23.7188 24.125C22.0104 24.1667 20.3021 24.1667 18.5938 24.125C20.6446 21.6474 22.7488 19.2203 24.9062 16.8438Z"
+                        fill="black"
+                      ></path>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_146_924"
+                          x1="30"
+                          y1="0.5"
+                          x2="30"
+                          y2="60.5"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop></stop>
+                          <stop offset="1" stop-opacity="0.12"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    <h3 class="possibilities-block__head">
+                      Автоматическая генерация документов
+                    </h3>
+                  </div>
+                  <p class="possibilities-block__main">
+                    Наша система создает все необходимые документы — внутренние
+                    накладные, коммерческие предложения, договоры, счета на
+                    оплату, накладные и акты выполненных работ — за два клика.
+                    Исключите ошибки и ускорьте процесс оформления документов
+                    прямо в системе, что позволяет экономить время и повышать
+                    продуктивность.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"
+            >
+              <span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                aria-current="true"
+              ></span>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+          <button class="open_left_section" data-name="consultation">
+            Бесплатная демонстрация
+          </button>
+        </div>
+        <!-- <div class="ears-container">
+          <div class="ears"></div>
+          <div class="ears-bg"></div>
+        </div> -->
+      </div>
+
+      <div class="section cases-block">
+        <div class="container" id="cases_container">
+          <h2>Наши кейсы</h2>
+          <div
+            class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+            id="casesBlockSwiper"
+          >
+            <div
+              class="swiper-wrapper"
+              id="swiper-wrapper-ef0104cc8874dbfef"
+              aria-live="polite"
+            >
+              <div
+                class="swiper-slide cases-block__card swiper-slide-active"
+                role="group"
+                aria-label="1 / 2"
+                style="width: 565px; margin-right: 30px"
+              >
+                <div class="cases-block__header">
+                  <div class="cases-block__logo">
+                    <img
+                      src="https://static.tildacdn.pro/tild6564-3037-4232-b534-643863313536/gamechanger__53.png"
+                      alt="dessert house png logo"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3>Продажа промышленного оборудования</h3>
+                  <p>
+                    Мы разработали автоматизированную систему, направленную на
+                    привлечение новых клиентов и обработку входящих заказов.
+                    Контакт-центр с интегрированными роботами обеспечивает
+                    максимальную скорость работы как с новыми, так и с
+                    постоянными клиентами. Ежедневно каждому сотруднику
+                    рассчитывается коэффициент эффективности.
+                  </p>
+                </div>
+                <span class="cases-block__gray-line"></span>
+
+                <div class="cases-block__main">
+                  <span>
+                    <img
+                      src="https://static.tildacdn.pro/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                      alt="confirm svg logo"
+                      loading="lazy"
+                    />
+                    Заказы обрабатываются мгновенно </span
+                  ><span>
+                    <img
+                      src="https://static.tildacdn.pro/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                      alt="confirm svg logo"
+                      loading="lazy"
+                    />
+                    Запросы поставщикам отправляются автоматически </span
+                  ><span>
+                    <img
+                      src="https://static.tildacdn.pro/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                      alt="confirm svg logo"
+                      loading="lazy"
+                    />
+                    Сокращение времени на рутинные задачи на 80% </span
+                  ><span>
+                    <img
+                      src="https://static.tildacdn.pro/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                      alt="confirm svg logo"
+                      loading="lazy"
+                    />
+                    Руководство получает гарантированный контроль над процессами
+                  </span>
+                </div>
+              </div>
+              <div
+                class="swiper-slide cases-block__card swiper-slide-next"
+                role="group"
+                aria-label="2 / 2"
+                style="width: 565px; margin-right: 30px"
+              >
+                <div class="cases-block__header">
+                  <div class="cases-block__logo">
+                    <img
+                      src="https://static.tildacdn.pro/tild3636-6339-4162-a435-633839393130/gamechanger__72.png"
+                      alt="dessert house png logo"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3>Оптовая продажа металлопроката</h3>
+                  <p>
+                    Мы оптимизировали систему обработки входящих заказов,
+                    внедрив необходимых роботов для повышения эффективности.
+                    Разработали бизнес-процессы для автоматизации и внедрили
+                    нашу фирменную воронку для холодных звонков. Также создали
+                    модуль для отслеживания активности клиентов, который
+                    автоматически генерирует сделки. В качестве бонуса исправили
+                    недочеты предыдущих интеграторов.
+                  </p>
+                </div>
+                <span class="cases-block__gray-line"></span>
+
+                <div class="cases-block__main">
+                  <span>
+                    <img
+                      src="https://static.tildacdn.pro/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                      alt="confirm svg logo"
+                      loading="lazy"
+                    />
+                    Отедлы продаж стали работать автономно </span
+                  ><span>
+                    <img
+                      src="https://static.tildacdn.pro/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                      alt="confirm svg logo"
+                      loading="lazy"
+                    />
+                    Конверсия увеличилась на 30%, время руководителей
+                    сократилось на 40% </span
+                  ><span>
+                    <img
+                      src="https://static.tildacdn.pro/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                      alt="confirm svg logo"
+                      loading="lazy"
+                    />
+                    Привлечение новых клиентов возросло на 30%
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"
+            >
+              <span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                aria-current="true"
+              ></span>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+          <div class="cases-block__btns">
+            <button class="open_left_section" data-name="casesAll">
+              Смотреть все кейсы
+            </button>
+            <button class="open_left_section" data-name="consultation">
+              Улучшить производство
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section modules-block">
+        <div class="container">
+          <h2>Модули</h2>
+          <div class="modulesBlockSwiper-navigation">
+            <div class="modulesBlockSwiper-navigation__toggler"></div>
+            <button class="swiper-button-prev">Модули</button>
+            <button class="swiper-button-next">Роботы</button>
+          </div>
+          <div class="swiper" id="modulesBlockSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gradient-container">
+                <div class="gradient-border"></div>
+                <div
+                  class="swiper modules-card-swiper"
+                  id="modules-card-swiper1"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">1</span>
+                        </div>
+                        <h3>Модуль градации клиентов</h3>
+                        <p>реализация 7 дней</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >150&nbsp;000₸</span
+                        >
+                        <p>
+                          Модуль отслеживает активность всех клиентов, выделяет
+                          их цветом и сортирует по приоритетам. Он интегрируется
+                          с Bitrix24 и автоматически создает сделки для обзвона.
+                          <br />
+                          Всё просто: отмечаете клиентов, назначаете
+                          ответственного менеджера, и ему автоматически ставятся
+                          задачи для обзвона.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild3334-3266-4262-b536-373937373234/module-gradazia.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">2</span>
+                        </div>
+                        <h3>Складской модуль</h3>
+                        <p>реализация 7 дней</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >50&nbsp;000₸</span
+                        >
+                        <p>
+                          Этот модуль позволит вам отслеживать остатки товаров
+                          по категориям на всех складах одновременно. <br />
+                          Кроме того, вы сможете изменять цены на все товары
+                          сразу.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild3338-6632-4666-b834-373533646562/module-sklad.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">3</span>
+                        </div>
+                        <h3>Модуль инвентаризации</h3>
+                        <p>реализация 7 дней</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >50&nbsp;000₸</span
+                        >
+                        <p>
+                          Модуль выполняет инвентаризацию, корректируя складские
+                          остатки. После внесения фактических данных модуль
+                          автоматически осуществляет операции по списанию и
+                          оприходованию, а также создает документ с итогами
+                          проверки.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild6265-6362-4533-a331-656436346365/module-inventory.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">4</span>
+                        </div>
+                        <h3>Производственный модуль</h3>
+                        <p>реализация 21 день</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >300&nbsp;000₸</span
+                        >
+                        <p>
+                          Данный модуль предназначен для расчета себестоимости
+                          изделий, планирования и автоматизации процессов на
+                          вашем производстве. Использование модуля постепенно
+                          повышает эффективность работы вашего предприятия.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild3235-6461-4638-b238-346464323636/module-proizvodstvo.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">5</span>
+                        </div>
+                        <h3>Онлайн-SHOP(товары)</h3>
+                        <p>реализация 7 дней</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >150&nbsp;000₸</span
+                        >
+                        <p>
+                          Каталог товаров, отражающий ваш ассортимент в
+                          Bitrix24. При сохранении корзины автоматически
+                          создается сделка с уже заполненными полями: контакт,
+                          телефон, адрес. Вы можете самостоятельно управлять
+                          содержимым каталога через систему.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild3063-6230-4464-b662-373533323066/module-shop.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">6</span>
+                        </div>
+                        <h3>Онлайн-SHOP(бронь)</h3>
+                        <p>реализация 7 дней</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >150&nbsp;000₸</span
+                        >
+                        <p>
+                          Каталог для аренды товаров, отражающий ваш ассортимент
+                          в Bitrix24. При сохранении корзины автоматически
+                          создается сделка с уже заполненными полями: контакт,
+                          телефон, адрес. Вы можете самостоятельно управлять
+                          содержимым каталога через систему.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild3063-6230-4464-b662-373533323066/module-shop.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next">
+                    <svg
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.66699 5.00008H10.667M10.667 5.00008L7.33366 1.66675M10.667 5.00008L7.33366 8.33341"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.333 5.00008H1.33301M1.33301 5.00008L4.66634 1.66675M1.33301 5.00008L4.66634 8.33341"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide gradient-container">
+                <div class="gradient-border"></div>
+                <div
+                  class="swiper modules-card-swiper"
+                  id="modules-card-swiper1"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">1</span>
+                        </div>
+                        <h3>ROBO-</h3>
+                        <p>реализация 7 дней</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >50&nbsp;000₸</span
+                        >
+                        <p>
+                          Этот робот может отнимать товары от складских остатков
+                          на любом этапе воронки. Он является удобным помощником
+                          для продаж, у которых цикл не заканчивается отгрузкой
+                          товаров и производственных компаний.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild3733-3134-4634-b165-653830336433/bitrix_robot_-_1.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">2</span>
+                        </div>
+                        <h3>ROBO+</h3>
+                        <p>реализация 7 дней</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >50&nbsp;000₸</span
+                        >
+                        <p>
+                          Этот робот может добавлять товары к складским остаткам
+                          на любом этапе воронки. Он является удобным помощником
+                          для перепродавцов и производственных компаний.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild3932-6538-4233-b534-323064633264/bitrix_robot_-_2.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="swiper-slide modules-card-swiper__card">
+                      <div class="modules-card-swiper__header">
+                        <div class="gradient-container">
+                          <div class="gradient-border"></div>
+                          <span class="modules-card-swiper__number">3</span>
+                        </div>
+                        <h3>ROBO Call</h3>
+                        <p>реализация 10 дней</p>
+                      </div>
+                      <div class="modules-card-swiper__main">
+                        <span class="modules-card-swiper__price"
+                          >150&nbsp;000₸</span
+                        >
+                        <p>
+                          Этот робот помогает отделам продаж автоматизировать
+                          процесс передачи сделок. Когда звонок переходит на
+                          другую линию, робот активируется и меняет
+                          ответственного за сделку.
+                        </p>
+                      </div>
+                      <img
+                        class="modules-card-swiper__img"
+                        src="https://static.tildacdn.com/tild6664-6330-4833-b339-366137363530/bitrix_robot_-_3.png"
+                        alt="module image png"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next">
+                    <svg
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.66699 5.00008H10.667M10.667 5.00008L7.33366 1.66675M10.667 5.00008L7.33366 8.33341"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.333 5.00008H1.33301M1.33301 5.00008L4.66634 1.66675M1.33301 5.00008L4.66634 8.33341"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section faq" id="faq">
+        <div class="container">
+          <h2>FAQ</h2>
+          <ul class="faq__list">
+            <li class="faq__card">
+              <div class="faq__header">
+                <div class="plus-icon">
+                  <span class="plus-icon--vertical-line"></span>
+                  <span class="plus-icon--horizontal-line"></span>
+                </div>
+                <h3>Почему мне нужна CRM или ERP система?</h3>
+              </div>
+              <div class="faq__main">
+                <p>
+                  CRM и ERP системы позволяют эффективно управлять бизнесом,
+                  автоматизировать процессы, экономить время и постепенно
+                  увеличивать рост компании, сотрудников и доходов. Системы
+                  выявляют слабые места предприятия, а их правильное
+                  использование обеспечивает конкурентные преимущества по
+                  внутренним показателям.
+                  <br />
+                </p>
+                <br />
+              </div>
+            </li>
+            <li class="faq__card">
+              <div class="faq__header">
+                <div class="plus-icon">
+                  <span class="plus-icon--vertical-line"></span>
+                  <span class="plus-icon--horizontal-line"></span>
+                </div>
+                <h3>Подойдет ли Bitrix24 для нашей компании?</h3>
+              </div>
+              <div class="faq__main">
+                <p>
+                  Bitrix24 – это гибкая и настраиваемая платформа, которая
+                  подходит для большинства отраслей. Это мощный конструктор с
+                  широким набором инструментов для управления компанией. При
+                  правильной настройке система обеспечивает постепенный рост и
+                  улучшение бизнес-процессов. Наша задача – адаптировать
+                  Bitrix24 под ваши потребности для максимальной эффективности.
+                  <br />
+                </p>
+                <br />
+              </div>
+            </li>
+            <li class="faq__card">
+              <div class="faq__header">
+                <div class="plus-icon">
+                  <span class="plus-icon--vertical-line"></span>
+                  <span class="plus-icon--horizontal-line"></span>
+                </div>
+                <h3>Как быстро моя команда адаптируется к Bitrix24?</h3>
+              </div>
+              <div class="faq__main">
+                <p>
+                  Срок адаптации зависит от многих факторов (текущего состояния
+                  компании, объема системы и масштабов бизнеса). В среднем
+                  адаптация занимает от 2 дней до 2 недель.
+                  <br />
+                </p>
+                <br />
+              </div>
+            </li>
+            <li class="faq__card">
+              <div class="faq__header">
+                <div class="plus-icon">
+                  <span class="plus-icon--vertical-line"></span>
+                  <span class="plus-icon--horizontal-line"></span>
+                </div>
+                <h3>Как быстро я увижу результаты от внедрения Bitrix24?</h3>
+              </div>
+              <div class="faq__main">
+                <p>
+                  Результаты становятся заметны сразу после внедрения, особенно
+                  в улучшении организации и управления задачами. После полной
+                  адаптации показатели начинают постепенно расти, и этот процесс
+                  продолжается. Компании, с которыми мы работаем, регулярно
+                  повышают свою эффективность.
+                  <br />
+                </p>
+                <br />
+              </div>
+            </li>
+            <li class="faq__card">
+              <div class="faq__header">
+                <div class="plus-icon">
+                  <span class="plus-icon--vertical-line"></span>
+                  <span class="plus-icon--horizontal-line"></span>
+                </div>
+                <h3>Как мотивировать сотрудников работать в программе?</h3>
+              </div>
+              <div class="faq__main">
+                <p>
+                  Заставлять не нужно. Мы берем на себя обучение и адаптацию
+                  вашей команды. Наш авторский метод включает обучение,
+                  мотивацию, адаптацию и контроль выполнения регламентов. Этот
+                  подход гарантирует успешное внедрение Bitrix24. Единственное,
+                  что требуется от вас, – это желание и готовность.
+                  <br />
+                </p>
+                <br />
+              </div>
+            </li>
+            <li class="faq__card">
+              <div class="faq__header">
+                <div class="plus-icon">
+                  <span class="plus-icon--vertical-line"></span>
+                  <span class="plus-icon--horizontal-line"></span>
+                </div>
+                <h3>Могу ли я самостоятельно приобрести программу?</h3>
+              </div>
+              <div class="faq__main">
+                <p>
+                  Да, вы можете самостоятельно приобрести любую программу, такую
+                  как 1С, Bitrix24, AmoCRM. Однако их эффективность зависит от
+                  точных настроек, которые должны соответствовать вашим
+                  бизнес-процессам. Для этого необходима команда профессионалов,
+                  которые понимают, как настроить систему под нужды вашего
+                  бизнеса.
+                  <br />
+                </p>
+                <br />
+              </div>
+            </li>
+            <li class="faq__card">
+              <div class="faq__header">
+                <div class="plus-icon">
+                  <span class="plus-icon--vertical-line"></span>
+                  <span class="plus-icon--horizontal-line"></span>
+                </div>
+                <h3>Почему клиенты выбирают именно Gamechanger?</h3>
+              </div>
+              <div class="faq__main">
+                <p>
+                  Мы не просто разработчики – мы предприниматели, которые
+                  однажды задали себе те же вопросы для улучшения своих
+                  компаний. Поняв, что рынок не способен полностью удовлетворить
+                  наши запросы, мы разработали собственные системы, которые
+                  протестированы и отточены для максимальной эффективности.
+                  <br />
+                </p>
+                <br />
+              </div>
+            </li>
+          </ul>
+          <div class="faq__btns">
+            <a href="/bitrix24"
+              >Что такое Битрикс24?
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="10"
+                  cy="10.5"
+                  r="10"
+                  fill="white"
+                  fill-opacity="0.04"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.03903 6.87204C8.20175 6.70932 8.46557 6.70932 8.62829 6.87204L11.9616 10.2054C12.1243 10.3681 12.1243 10.6319 11.9616 10.7946L8.62829 14.128C8.46557 14.2907 8.20175 14.2907 8.03903 14.128C7.87631 13.9652 7.87631 13.7014 8.03903 13.5387L11.0777 10.5L8.03903 7.46129C7.87631 7.29858 7.87631 7.03476 8.03903 6.87204Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="/">
+              Другие сферы
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="10"
+                  cy="10.5"
+                  r="10"
+                  fill="white"
+                  fill-opacity="0.04"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.03903 6.87204C8.20175 6.70932 8.46557 6.70932 8.62829 6.87204L11.9616 10.2054C12.1243 10.3681 12.1243 10.6319 11.9616 10.7946L8.62829 14.128C8.46557 14.2907 8.20175 14.2907 8.03903 14.128C7.87631 13.9652 7.87631 13.7014 8.03903 13.5387L11.0777 10.5L8.03903 7.46129C7.87631 7.29858 7.87631 7.03476 8.03903 6.87204Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="/dna">
+              ДНК компании
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="10"
+                  cy="10.5"
+                  r="10"
+                  fill="white"
+                  fill-opacity="0.04"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.03903 6.87204C8.20175 6.70932 8.46557 6.70932 8.62829 6.87204L11.9616 10.2054C12.1243 10.3681 12.1243 10.6319 11.9616 10.7946L8.62829 14.128C8.46557 14.2907 8.20175 14.2907 8.03903 14.128C7.87631 13.9652 7.87631 13.7014 8.03903 13.5387L11.0777 10.5L8.03903 7.46129C7.87631 7.29858 7.87631 7.03476 8.03903 6.87204Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="consultation slideIn_left" data-id="1">
+      <div class="gradient-container">
+        <div class="container">
+          <div class="consultation__form">
+            <button
+              class="consultation__back-btn hide_left_section"
+              data-name="consultation"
+            >
+              Вернуться
+            </button>
+            <h2>Свяжитесь с нами</h2>
+            <script data-b24-form="inline/124/6t1czc" data-skip-moving="true">
+              (function (w, d, u) {
+                var s = d.createElement("script");
+                s.async = true;
+                s.src = u + "?" + ((Date.now() / 180000) | 0);
+                var h = d.getElementsByTagName("script")[0];
+                h.parentNode.insertBefore(s, h);
+              })(
+                window,
+                document,
+                "https://cdn-ru.bitrix24.ru/b27952962/crm/form/loader_124.js"
+              );
+            </script>
+          </div>
+          <div>
+            <video
+              autoplay
+              muted
+              playsinline
+              loop
+              class="consultation__"
+              id="video"
+            >
+              <source
+                src="https://dl.dropbox.com/scl/fi/e83xkaz17u5sxz5wgunb1/Logo-animated.mp4?rlkey=0uauqncvbselkgfc3yyk4vcti&st=d3qiontx&dl=0"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+
+        <div class="gradient-border"></div>
+      </div>
+    </section>
+
+    <section class="privacy-policy slideIn_left">
+      <div class="gradient-container">
+        <div class="container">
+          <div class="privacy-policy__content">
+            <button class="hide_left_section" data-name="privacy-policy">
+              Вернуться
+            </button>
+            <h2>
+              <span class="green_text">Ваш бизнес в надежных руках.</span> Вся
+              информация, полученная в процессе работы, останется строго
+              конфиденциальной.
+            </h2>
+            <h3>
+              Договор на настройку Bitrix24 <br />
+              Пункт 3. конфиденциальность
+            </h3>
+            <p>
+              В процессе предоставления услуг внедрения, Исполнитель признает,
+              что может стать обладателем конфиденциальной информации,
+              относящейся к технологиям, бизнес-процессам, стратегиям, идеям или
+              другим аспектам деятельности Заказчика. Исполнитель обязуется не
+              раскрывать такую информацию третьим лицам, а также не использовать
+              ее для каких-либо других целей, кроме оказания услуг Заказчика в
+              рамках данного договора. конфиденциальности остается в силе как во
+              время срока действия договора, так и после его завершения. Все
+              материалы и знания, полученные Исполнителем в ходе сотрудничества,
+              являются интеллектуальной собственностью Заказчика, и Исполнитель
+              не имеет права использовать их в личных целях или в интересах
+              других проектов или сторон.
+            </p>
+          </div>
+        </div>
+        <div class="gradient-border"></div>
+      </div>
+    </section>
+
+    <section class="service slideIn_left">
+      <div class="gradient-container">
+        <div class="container">
+          <div class="service__content">
+            <button class="hide_left_section" data-name="service">
+              Вернуться
+            </button>
+            <h2>1 месяц обслуживания в подарок!</h2>
+            <p>
+              Приобретая интеграцию, вы получаете месяц обслуживания в подарок!
+              В течение этого месяца мы предоставляем полное сопровождение
+              вашего проекта, включая бесплатные изменения и реализацию всех
+              ваших пожеланий. Наша команда будет доступна для вас 24 часа в
+              сутки, 7 дней в неделю, чтобы гарантировать безупречную работу и
+              адаптацию сервиса под ваши уникальные потребности
+            </p>
+          </div>
+          <img
+            data-src="https://static.tildacdn.com/tild6230-3065-4438-b330-636337616239/gift.png"
+            alt="gift png"
+            loading="lazy"
+          />
+        </div>
+        <div class="gradient-border"></div>
+      </div>
+    </section>
+
+    <section class="contact_us slideIn_left">
+      <div class="gradient-container">
+        <div class="container"></div>
+        <div class="gradient-border"></div>
+      </div>
+    </section>
+
+    <section class="cases_all slideIn_left">
+      <div class="gradient-container">
+        <div class="container">
+          <button class="hide_left_section" data-name="casesAll">
+            Вернуться
+          </button>
+          <h2>Все кейсы</h2>
+
+          <ul>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3461-3538-4136-a632-356262353862/gamechanger__66.png"
+                    alt="dessert house png logo"
+                    loading="lazy"
+                  />
+                  <a href="#popup:dessertHouse" class="case_with_review">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="64px"
+                      height="64px"
+                      viewBox="-1.6 -1.6 35.20 35.20"
+                      enable-background="new 0 0 32 32"
+                      xml:space="preserve"
+                      fill="#04d404"
+                      stroke="#04d404"
+                      stroke-width="0.00032"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke="#CCCCCC"
+                        stroke-width="0.128"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <path
+                            fill="#04d404"
+                            d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16 S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z"
+                          ></path>
+                          <path
+                            fill="#04d404"
+                            d="M19.609,14.802L14.316,10.8c-0.263-0.197-0.567-0.302-0.88-0.302C12.631,10.498,12,11.158,12,12v8 c0,0.842,0.635,1.502,1.445,1.502c0.313,0,0.619-0.104,0.885-0.304l5.258-3.998c0.382-0.287,0.611-0.742,0.611-1.218 C20.198,15.512,19.983,15.081,19.609,14.802z M18.985,16.401l-5.258,3.998C13.434,20.622,13,20.453,13,20v-8 c0-0.326,0.225-0.502,0.437-0.502c0.096,0,0.19,0.034,0.279,0.101l5.293,4.002c0.165,0.123,0.19,0.292,0.19,0.382 C19.198,16.147,19.122,16.3,18.985,16.401z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <h3>Продажа и производство кондитерских изделий</h3>
+                <p>
+                  Мы оптимизировали все внутренние системы и внедрили систему
+                  выдачи сырья. Разработали полноценную ERP-систему для
+                  производства на платформе MAccess и оцифровали бизнес на
+                  платформе Bitrix24.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span>
+                  <img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />
+                  Снижение себестоимости продукции на 30%
+                </span>
+                <span>
+                  <img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />
+                  Ускорение работы кладовщиков на 50%
+                </span>
+                <span>
+                  <img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />
+                  Улучшение результатов ревизий на 90% на 8 складах
+                </span>
+                <span>
+                  <img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />
+                  Увеличение скорости работы управления на 80%
+                </span>
+                <span>
+                  <img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />
+                  Увеличение продаж на 130%
+                </span>
+                <span>
+                  <img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />
+                  Уменьшение текучести кадров на 70%
+                </span>
+                <span>
+                  <img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />
+                  Сокращение просроченных платежей на 50%
+                </span>
+                <span>
+                  <img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />
+                  Повышение лояльности клиентов на 50%
+                </span>
+              </div>
+            </li>
+
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3636-6339-4162-a435-633839393130/gamechanger__72.png"
+                    alt="Akraholding logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Оптовая продажа металлопроката</h3>
+                <p>
+                  Мы оптимизировали систему обработки входящих заказов, внедрив
+                  необходимых роботов для повышения эффективности. Разработали
+                  бизнес-процессы для автоматизации и внедрили нашу фирменную
+                  воронку для холодных звонков. Также создали модуль для
+                  отслеживания активности клиентов, который автоматически
+                  генерирует сделки. В качестве бонуса исправили недочеты
+                  предыдущих интеграторов.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Отделы продаж стали работать автономно</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Конверсия увеличилась на 30%, время руководителей
+                  сократилось на 40%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Привлечение новых клиентов возросло на 30%</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3565-3566-4535-b063-323664663666/gamechanger__55.png"
+                    alt="MYD Production logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Аренда мест для размещения рекламы</h3>
+                <p>
+                  Мы разработали систему на платформе Bitrix24, объединив отдел
+                  продаж, бухгалтерию, юридический отдел и руководство. Были
+                  разработаны бизнес-процессы для утверждения и передачи задач.
+                  Также мы интегрировали WhatsApp и телефонию для эффективного
+                  контроля работы менеджеров.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Система контролирует сроки размещения и оплаты</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Напоминания на каждом этапе и передача информации между
+                  отделами удвоили скорость работы</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Все документы генерируются автоматически</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Снижение рутинной работы на 40%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Аналитика предоставляет руководству необходимые
+                  показатели</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3539-6263-4332-a138-356437623134/gamechanger__60.png"
+                    alt="Kazevent logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Аренда тех. оборудования Организация мероприятий</h3>
+                <p>
+                  Мы создали систему на платформе Bitrix24 с интеграцией с 1С,
+                  складским учетом оборудования, автогенерацией коммерческих
+                  предложений и договоров, а также отчетами по рентабельности
+                  каждого проекта. В этой системе продуман весь сценарий работы
+                  менеджеров, склада, инженеров и бухгалтерии.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Оформление документов сократилось с 30-150 минут до 3
+                  минут</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Внедрен учет ресурсов, обеспечивающий понимание их
+                  доступности</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Автоматическая аналитика позволяет легко вычислять
+                  рентабельность каждого проекта</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Клиенты получили быстрый доступ к актуальным тендерам</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6530-3033-4366-b432-643236383161/gamechanger__67.png"
+                    alt="Айболит logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Кулинарный цех СМ Айболит</h3>
+                <p>
+                  Мы внедрили систему калькуляции блюд и автоматизированного
+                  производства на платформе Bitrix24. Рецепты сохраняются в
+                  отдельном модуле, который также используется для планирования
+                  производства и распределения задач. Также была установлена
+                  система для выдачи сырья с оптимальной расстановкой
+                  оборудования. Склад получает заявки на выдачу материалов, а
+                  объемы рассчитываются автоматически на основе текущих заявок.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />После внедрения изменений в кулинарном отделе были
+                  утверждены стандартные рецепты, что позволило добиться
+                  стабильного качества блюд</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Каждый сотрудник имеет KPI и план по изготовлению продукции,
+                  что значительно повысило их эффективность</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Складской учет был налажен и находится под строгим
+                  контролем</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6530-3033-4366-b432-643236383161/gamechanger__67.png"
+                    alt="Айболит logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Служба доставки СМ айболит</h3>
+                <p>
+                  Мы разработали систему пассивных продаж на платформе Bitrix24
+                  и создали два каталога — для частных клиентов и оптовиков,
+                  которые интегрировали с системой. При сохранении корзины
+                  автоматически создается сделка и менеджеру поступает
+                  напоминание. Процесс управления заказами включает
+                  взаимодействие со складом и курьерской службой до момента
+                  контроля оплат.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Процесс оформления заявок значительно упростился: теперь он
+                  занимает всего 2 минуты, а сбор заказа – 5 минут</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Вся необходимая информация автоматически передается
+                  кладовщику и курьеру, что устранило хаос и сделало доставку
+                  более организованной и своевременной</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6432-3864-4636-b131-313634623534/gamechanger__54.png"
+                    alt="Народный переводчик logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Центр онлайн-переводов</h3>
+                <p>
+                  Мы создали систему на платформе Bitrix24 с интеграцией 1С для
+                  бухгалтерии, складским учетом оборудования, автогенерацией
+                  коммерческих предложений и договоров, и отчетами по
+                  рентабельности каждого проекта.Так же был разработан авторский
+                  модуль для подсчета символов в файлах разного типа и общей
+                  суммы за перевод.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />После внедрения решения время на оформление документов
+                  сократилось с 30-150 минут до 3 минут</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Теперь есть четкое понимание занятости переводчиков</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Автоматическая аналитика позволяет вычислять рентабельность
+                  каждого проекта</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Процесс согласования, участия в тендерах увеличелся на
+                  20%</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3735-6362-4130-b132-313038373062/gamechanger__73.png"
+                    alt="Octo KZ logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Продажа противопожарной техники</h3>
+                <p>
+                  Мы разработали систему обработки входящих заказов, внедрив
+                  необходимых роботов для повышения эффективности.
+                  Автоматизировали бизнес-процессы и внедрили нашу фирменную
+                  воронку для холодных звонков. Также создали воронку для
+                  тендерных заказов и интегрировали Bitrix24 с 1С. В качестве
+                  бонуса исправили недочеты предыдущих интеграторов.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Отделы продаж стали работать автономно</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Скорость обработки заказов увеличилась на 50%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Руководство теперь может видеть все происходящее через
+                  мобильное приложение</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Автогенерация документов сократила время на их составление с
+                  30 до 2 минут</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3134-6339-4032-a263-623836333065/brilliance.png"
+                    alt="Brilliance logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Прокат платьев</h3>
+                <p>
+                  Мы разработали два сайта, по одному для каждого города,
+                  которые взаимодействуют с единой системой Bitrix24. В системе
+                  были созданы два склада, привязанные к соответствующим сайтам.
+                  Товары бронируются через удобный календарь, создавая сделки в
+                  системе. Настроена система оплаты с автоматическим вычетом
+                  задолженности и автонапоминаниями для клиентов.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Владелец всегда в курсе текущих и будущих доходов</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Сотрудники легко ориентируются в специально разработанном
+                  интерфейсе</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Время на создание брони сократилось с 10 до 1 минуты</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6564-3037-4232-b534-643863313536/gamechanger__53.png"
+                    alt="Art Still Company logo png"
+                    loading="lazy"
+                  />
+                  <a href="#popup:artStill" class="case_with_review">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="64px"
+                      height="64px"
+                      viewBox="-1.6 -1.6 35.20 35.20"
+                      enable-background="new 0 0 32 32"
+                      xml:space="preserve"
+                      fill="#04d404"
+                      stroke="#04d404"
+                      stroke-width="0.00032"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke="#CCCCCC"
+                        stroke-width="0.128"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <path
+                            fill="#04d404"
+                            d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16 S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z"
+                          ></path>
+                          <path
+                            fill="#04d404"
+                            d="M19.609,14.802L14.316,10.8c-0.263-0.197-0.567-0.302-0.88-0.302C12.631,10.498,12,11.158,12,12v8 c0,0.842,0.635,1.502,1.445,1.502c0.313,0,0.619-0.104,0.885-0.304l5.258-3.998c0.382-0.287,0.611-0.742,0.611-1.218 C20.198,15.512,19.983,15.081,19.609,14.802z M18.985,16.401l-5.258,3.998C13.434,20.622,13,20.453,13,20v-8 c0-0.326,0.225-0.502,0.437-0.502c0.096,0,0.19,0.034,0.279,0.101l5.293,4.002c0.165,0.123,0.19,0.292,0.19,0.382 C19.198,16.147,19.122,16.3,18.985,16.401z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <h3>Продажа промышленного оборудования</h3>
+                <p>
+                  Мы разработали автоматизированную систему, направленную на
+                  привлечение новых клиентов и обработку входящих заказов.
+                  Контакт-центр с интегрированными роботами обеспечивает
+                  максимальную скорость работы как с новыми, так и с постоянными
+                  клиентами. Ежедневно каждому сотруднику рассчитывается
+                  коэффициент эффективности.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Заказы обрабатываются мгновенно</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Запросы поставщикам отправляются автоматически</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Сокращение времени на рутинные задачи на 80%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Руководство получает гарантированный контроль над
+                  процессами</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6337-6636-4665-b365-303633663765/gamechanger__57.png"
+                    alt="TechEX logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Продажа бурного оборудования и техники</h3>
+                <p>
+                  Мы разработали на платформе Bitrix24 воронку пассивных продаж
+                  с интеграцией процесса логистики. Была подключена интеграция с
+                  "Мой Склад" для отслеживания остатков товаров и автоматической
+                  отгрузки на соответствующих этапах воронки. В систему была
+                  внедрена автогенерация коммерческих предложений и договоров, а
+                  также подключен контакт-центр для приема лидов и коммуникации
+                  с клиентами через WhatsApp и Instagram.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Один единый цикл объединяет отдел продаж, логистику, склад и
+                  бухгалтерию</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Время на составление коммерческих предложений и договоров
+                  сократилось на 70%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Весь процесс сопровождается автоматическими задачами на
+                  каждом этапе</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Увеличение скорости работы менеджеров 30%</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3034-3165-4665-a361-616239366565/gamechanger__58.png"
+                    alt="DentOK logo png"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Клиника стоматологии</h3>
+                <p>
+                  Мы внедрили систему управления продажами на платформе
+                  Bitrix24. Контакт-центр обеспечивает обработку входящих
+                  заказов через WhatsApp и телефонию, поддерживая автоматические
+                  рассылки и уведомления на всех этапах процесса.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Заказы со всех источников поступают в единую систему</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Договоры генерируются автоматически и весь процесс
+                  сопровождаются роботами, что позволило сократить время
+                  оформления заказов на 40%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Встроенная аналитика обеспечивает необходимый контроль и
+                  мониторинг</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6136-6365-4634-b565-323463646134/gamechanger__62.png"
+                    alt="WhyCook logo png"
+                    loading="lazy"
+                  />
+                  <a href="#popup:whyCook" class="case_with_review">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="64px"
+                      height="64px"
+                      viewBox="-1.6 -1.6 35.20 35.20"
+                      enable-background="new 0 0 32 32"
+                      xml:space="preserve"
+                      fill="#04d404"
+                      stroke="#04d404"
+                      stroke-width="0.00032"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke="#CCCCCC"
+                        stroke-width="0.128"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <path
+                            fill="#04d404"
+                            d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16 S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z"
+                          ></path>
+                          <path
+                            fill="#04d404"
+                            d="M19.609,14.802L14.316,10.8c-0.263-0.197-0.567-0.302-0.88-0.302C12.631,10.498,12,11.158,12,12v8 c0,0.842,0.635,1.502,1.445,1.502c0.313,0,0.619-0.104,0.885-0.304l5.258-3.998c0.382-0.287,0.611-0.742,0.611-1.218 C20.198,15.512,19.983,15.081,19.609,14.802z M18.985,16.401l-5.258,3.998C13.434,20.622,13,20.453,13,20v-8 c0-0.326,0.225-0.502,0.437-0.502c0.096,0,0.19,0.034,0.279,0.101l5.293,4.002c0.165,0.123,0.19,0.292,0.19,0.382 C19.198,16.147,19.122,16.3,18.985,16.401z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <h3>Продажа и производство кулинарных изделий</h3>
+                <p>
+                  Мы разработали систему на платформе Microsoft Access, которая
+                  позволяет калькулировать полуфабрикаты и блюда с учетом всех
+                  показателей (% уварки, энергозатраты, рабочая сила, аренда).
+                  Отдел продаж был автоматизирован на платформе Bitrix24 с
+                  интеграцией Whoopkassa, WhatsApp и Instagram.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Проект стартовал без переплат на дефектную продукцию и
+                  зарплаты</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Полноценный механизм был запущен за 1 месяц</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Заказы теперь оформляются за 2 минуты</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Аналитическая система предоставляет точные данные о
+                  рентабельности и производительности</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6336-6635-4930-b736-623161663938/44e9784e-4e8a-4ea7-8.png"
+                    alt="Jina Jihaz"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>Мебельное проиводство</h3>
+                <p>
+                  Мы разработали систему на базе платформы Bitrix24 с
+                  интеграцией Контакт-центра. Внедрение единого рабочего
+                  процесса позволило передавать заявки от менеджеров через
+                  замерщиков и дизайнеров непосредственно в производство. Сроки
+                  выполнения заказов автоматически рассчитываются на основе типа
+                  и сложности изделия.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Увеличение скорости обработки заявок на 70%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Повышение производительности на 20%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Внедрение аналитики с помощью BI отчетов</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Автоматизированный расчет KPI сотрудников</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3666-3338-4837-a532-356232626130/gamechanger__59.png"
+                    alt="Toreo Coffee"
+                    class="dubbleImg"
+                    loading="lazy"
+                  />
+                  <a href="#popup:toreo" class="case_with_review">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="64px"
+                      height="64px"
+                      viewBox="-1.6 -1.6 35.20 35.20"
+                      enable-background="new 0 0 32 32"
+                      xml:space="preserve"
+                      fill="#04d404"
+                      stroke="#04d404"
+                      stroke-width="0.00032"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke="#CCCCCC"
+                        stroke-width="0.128"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <path
+                            fill="#04d404"
+                            d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16 S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z"
+                          ></path>
+                          <path
+                            fill="#04d404"
+                            d="M19.609,14.802L14.316,10.8c-0.263-0.197-0.567-0.302-0.88-0.302C12.631,10.498,12,11.158,12,12v8 c0,0.842,0.635,1.502,1.445,1.502c0.313,0,0.619-0.104,0.885-0.304l5.258-3.998c0.382-0.287,0.611-0.742,0.611-1.218 C20.198,15.512,19.983,15.081,19.609,14.802z M18.985,16.401l-5.258,3.998C13.434,20.622,13,20.453,13,20v-8 c0-0.326,0.225-0.502,0.437-0.502c0.096,0,0.19,0.034,0.279,0.101l5.293,4.002c0.165,0.123,0.19,0.292,0.19,0.382 C19.198,16.147,19.122,16.3,18.985,16.401z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <h3>Оптовая и розничная торговля</h3>
+                <p>
+                  Мы внедрили систему управления продажами на платформе
+                  Bitrix24. Контакт-центр обеспечивает обработку входящих
+                  заказов через WhatsApp и телефонию, поддерживая автоматические
+                  рассылки и уведомления на всех этапах процесса.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                    loading="lazy"
+                  />Единый процесс связывает отдел продаж, склад и
+                  логистику</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Заказы со всех источников поступают в единую систему</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Накладные генерируются автоматически и весь процесс
+                  сопровождается роботами, что позволило сократить время
+                  оформления заказов на 50%</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3363-3432-4964-b838-613533303436/gamechanger__16.png"
+                    alt="Copa.kz"
+                  />
+                </div>
+                <h3>Розничная и онлайн-торговля</h3>
+                <p>
+                  Мы настроили систему продаж на платформе Bitrix24 с
+                  контакт-центром, который объединяет все источники в одной
+                  системе. Были настроены вариации товаров (размеры) и система
+                  рассылок.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Заказы автоматически передаются от менеджера на склад со
+                  всей необходимой информацией и встроенными накладными</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Роботы сопровождают каждый этап работы, обеспечивая
+                  своевременные взаимодействия с клиентами и сотрудниками</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Встроенная аналитика предоставляет все необходимые
+                  показатели для руководства</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6136-6266-4137-b139-313665653331/gamechanger__69.png"
+                    alt="Terricon valley"
+                  />
+                </div>
+                <h3>It-Hub</h3>
+                <p>
+                  Мы разработали на базе Bitrix24 систему для быстрого создания
+                  карточек мероприятий на сайте и интеграции с формами для
+                  записи клиентов. Настроили автоматические рассылки напоминаний
+                  и сбор обратной связи, а также автоматическое формирование
+                  отчетов по мероприятиям.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Процесс размещения мероприятий на сайте сократился на
+                  50%</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Все записи и контактные данные надежно хранятся в
+                  системе</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Конверсия посещений увеличилась благодаря напоминаниям</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Удобная фильтрация клиентов позволяет делать точечные
+                  рассылки, а отчеты помогают оценивать конверсию и принимать
+                  обоснованные решения</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild6336-3335-4939-b339-643131663566/gamechanger__71.png"
+                    alt="Only massage"
+                  />
+                </div>
+                <h3>Массажный салон</h3>
+
+                <p>
+                  Мы внедрили систему на платформе Altegio. Теперь доступна
+                  удобная онлайн-запись для клиентов, где отображается
+                  прайс-лист услуг, мастер и доступное время для записи.
+                  Контакт-центр интегрирован в систему. Учет расходных
+                  материалов и работы мастеров обеспечивают полный контроль над
+                  предприятием.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Клиенты могут самостоятельно записываться на услуги, без
+                  участия администратора</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Каждый специалист видит количество записанных клиентов,
+                  услуги, на которые они записаны, и их сегмент (постоянный
+                  клиент, лояльный)</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Учет товаров и расходников ведётся внутри системы, а не в
+                  Excel</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3938-6432-4531-b636-343331386461/gamechanger__68.png"
+                    alt="Zoo zoo grumer"
+                  />
+                </div>
+                <h3>Услуги грумера</h3>
+
+                <p>
+                  Мы разработали систему бронирования на платформе Bitrix24.
+                  Клиенты получили удобный сайт для оформления бронирований.
+                  Канбан-система доводит сделки до завершения, а интеграция с
+                  WhatsApp и телефонией улучшает коммуникацию.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Клиенты получают автоматические напоминания в нужные
+                  моменты</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Задачи для грумеров назначаются автоматически</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Автоматически генерируемые отчеты обеспечивают четкое
+                  понимание деятельности для руководства</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Система кассовой сверки контролирует оплаты</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3565-6138-4535-a434-626136346432/city.png"
+                    alt="City"
+                  />
+                </div>
+                <h3>Зона отдыха</h3>
+
+                <p>
+                  Мы разработали систему для бронирования ресурсов на платформе
+                  Bitrix24. Услуги были разделены на категории с удобными
+                  формами и каталогами для каждого апартамента. Для каждого
+                  апартамента были сгенерированы QR-коды, которые связали
+                  систему со складским учетом. Были разработаны внутренние
+                  накладные для персонала и отчеты для руководства.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Посетители сканируют QR-код в своем номере, оформляют заказ,
+                  после чего сделка создается в системе на соответствующий
+                  апартамент</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Задача автоматически назначается персоналу, а накладная
+                  генерируется автоматически</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Руководство получает полную информацию о рентабельности всех
+                  услуг и имеет необходимый контроль</span
+                >
+              </div>
+            </li>
+            <li class="cases-block__card">
+              <div class="cases-block__header">
+                <div class="cases-block__logo">
+                  <img
+                    data-src="https://static.tildacdn.com/tild3134-3636-4235-a432-356635383139/gamechanger__65.png"
+                    alt="Alhadaya"
+                  />
+                </div>
+                <h3>Продажа пищевых добавок</h3>
+
+                <p>
+                  Мы настроили воронку продаж на платформе Bitrix24 с контакт
+                  центром (WhatsApp, Telegram, Instagram) и авто сообщениями.
+                </p>
+              </div>
+              <span class="cases-block__gray-line"></span>
+              <div class="cases-block__main">
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Система проводит часть коммуникации с клиентами, проводя
+                  квалификацию</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Договоры уведомления гарантируют своевременную
+                  коммуникацию</span
+                >
+                <span
+                  ><img
+                    src="https://static.tildacdn.com/tild3431-3932-4361-a535-306435343332/confirm.svg"
+                    alt="confirm svg logo"
+                  />Встроенная аналитика обеспечивает необходимый контроль и
+                  мониторинг</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="gradient-border"></div>
+      </div>
+    </section>
+
+    <section class="popup__contact_us">
+      <div class="popup__contact_us__container">
+        <span>
+          <a href="https://wa.me/77752214996" class="whatsApp">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_441_2657)">
+                <path
+                  d="M17.13 14.235C16.845 14.1 15.48 13.425 15.225 13.32C14.97 13.215 14.79 13.185 14.595 13.47C14.4 13.755 13.875 14.37 13.71 14.565C13.545 14.76 13.395 14.775 13.11 14.565C12.2914 14.2365 11.5354 13.7697 10.875 13.185C10.2772 12.6221 9.77107 11.9693 9.375 11.25C9.21 10.98 9.375 10.83 9.495 10.68C9.615 10.53 9.765 10.365 9.915 10.2C10.0247 10.0573 10.1154 9.901 10.185 9.735C10.2222 9.6578 10.2415 9.5732 10.2415 9.4875C10.2415 9.4018 10.2222 9.3172 10.185 9.24C10.185 9.105 9.555 7.74 9.315 7.185C9.075 6.63 8.865 6.705 8.7 6.705H8.1C7.81418 6.71614 7.54445 6.84022 7.35 7.05C7.03614 7.34951 6.78753 7.71062 6.61975 8.1107C6.45198 8.51078 6.36865 8.94121 6.375 9.375C6.45173 10.44 6.84331 11.4581 7.5 12.3C8.70506 14.0901 10.3537 15.5372 12.285 16.5C12.945 16.785 13.455 16.95 13.86 17.085C14.4287 17.2569 15.0298 17.2929 15.615 17.19C16.0036 17.1112 16.3719 16.9533 16.6971 16.7262C17.0222 16.4992 17.2972 16.2077 17.505 15.87C17.678 15.4529 17.735 14.9968 17.67 14.55C17.595 14.445 17.415 14.37 17.13 14.235Z"
+                  fill="white"
+                />
+                <path
+                  d="M19.935 4.02C18.8976 2.97283 17.6611 2.14399 16.2983 1.58237C14.9354 1.02076 13.4739 0.737734 12 0.750001C10.0474 0.760219 8.13173 1.28255 6.44421 2.26482C4.75669 3.2471 3.35642 4.65493 2.38325 6.34773C1.41009 8.04052 0.898089 9.95901 0.898395 11.9116C0.898701 13.8642 1.4113 15.7825 2.38499 17.475L0.884995 23.25L6.79499 21.75C8.42884 22.6391 10.2599 23.1033 12.12 23.1H12C14.2169 23.1144 16.3878 22.4683 18.236 21.244C20.0842 20.0196 21.5258 18.2726 22.3771 16.2256C23.2284 14.1787 23.4508 11.9246 23.0158 9.75072C22.5809 7.57688 21.5083 5.58184 19.935 4.02ZM12 21.18C10.3358 21.1813 8.70259 20.7302 7.27499 19.875L6.94499 19.68L3.43499 20.595L4.36499 17.175L4.15499 16.83C2.95703 14.9008 2.50891 12.5989 2.89567 10.3611C3.28242 8.12337 4.47714 6.10543 6.25314 4.69018C8.02915 3.27493 10.2629 2.56083 12.5305 2.68338C14.7981 2.80593 16.9419 3.75659 18.555 5.355C19.4198 6.21284 20.1052 7.23421 20.5714 8.35961C21.0375 9.485 21.275 10.6919 21.27 11.91C21.266 14.3673 20.2881 16.7229 18.5505 18.4605C16.8129 20.1981 14.4573 21.176 12 21.18Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_441_2657">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          +7 (775) 221 49 96
+        </span>
+        <span>
+          <a href="https://instagram.com/gamechanger_kz" class="instagram">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.9229 18.0618C16.2366 18.0618 18.9229 15.3755 18.9229 12.0618C18.9229 8.74808 16.2366 6.06179 12.9229 6.06179C9.60915 6.06179 6.92286 8.74808 6.92286 12.0618C6.92286 15.3755 9.60915 18.0618 12.9229 18.0618ZM12.9229 16.0618C15.132 16.0618 16.9229 14.2709 16.9229 12.0618C16.9229 9.85265 15.132 8.06179 12.9229 8.06179C10.7137 8.06179 8.92286 9.85265 8.92286 12.0618C8.92286 14.2709 10.7137 16.0618 12.9229 16.0618Z"
+                fill="white"
+              />
+              <path
+                d="M18.9229 5.06179C18.3706 5.06179 17.9229 5.50951 17.9229 6.06179C17.9229 6.61407 18.3706 7.06179 18.9229 7.06179C19.4752 7.06179 19.9229 6.61407 19.9229 6.06179C19.9229 5.50951 19.4752 5.06179 18.9229 5.06179Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.57682 4.33785C1.92286 5.62132 1.92286 7.30148 1.92286 10.6618V13.4618C1.92286 16.8221 1.92286 18.5023 2.57682 19.7857C3.15206 20.9147 4.06994 21.8326 5.19892 22.4078C6.48239 23.0618 8.16255 23.0618 11.5229 23.0618H14.3229C17.6832 23.0618 19.3634 23.0618 20.6468 22.4078C21.7758 21.8326 22.6937 20.9147 23.2689 19.7857C23.9229 18.5023 23.9229 16.8221 23.9229 13.4618V10.6618C23.9229 7.30148 23.9229 5.62132 23.2689 4.33785C22.6937 3.20887 21.7758 2.29099 20.6468 1.71575C19.3634 1.06179 17.6832 1.06179 14.3229 1.06179H11.5229C8.16255 1.06179 6.48239 1.06179 5.19892 1.71575C4.06994 2.29099 3.15206 3.20887 2.57682 4.33785ZM14.3229 3.06179H11.5229C9.8097 3.06179 8.64511 3.06335 7.74494 3.13689C6.8681 3.20853 6.4197 3.33838 6.1069 3.49776C5.35425 3.88126 4.74233 4.49318 4.35883 5.24583C4.19945 5.55863 4.0696 6.00703 3.99796 6.88387C3.92442 7.78404 3.92286 8.94863 3.92286 10.6618V13.4618C3.92286 15.175 3.92442 16.3395 3.99796 17.2397C4.0696 18.1166 4.19945 18.565 4.35883 18.8778C4.74233 19.6304 5.35425 20.2423 6.1069 20.6258C6.4197 20.7852 6.8681 20.9151 7.74494 20.9867C8.64511 21.0602 9.8097 21.0618 11.5229 21.0618H14.3229C16.0361 21.0618 17.2006 21.0602 18.1008 20.9867C18.9777 20.9151 19.4261 20.7852 19.7389 20.6258C20.4915 20.2423 21.1034 19.6304 21.4869 18.8778C21.6463 18.565 21.7762 18.1166 21.8478 17.2397C21.9213 16.3395 21.9229 15.175 21.9229 13.4618V10.6618C21.9229 8.94863 21.9213 7.78404 21.8478 6.88387C21.7762 6.00703 21.6463 5.55863 21.4869 5.24583C21.1034 4.49318 20.4915 3.88126 19.7389 3.49776C19.4261 3.33838 18.9777 3.20853 18.1008 3.13689C17.2006 3.06335 16.0361 3.06179 14.3229 3.06179Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          @gamechanger_kz
+        </span>
+        <span class="popup__contact_us--close">X</span>
+      </div>
+    </section>
+  </body>
+</html>
