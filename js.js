@@ -699,6 +699,28 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
+  // ЛОГИКА НУМЕРОВКИ ПРОБЛЕМ В БИТРИКСЕ
+  const painNumbers = document.querySelectorAll(".pain__number")
+
+  const painNumbers_URL = [
+    "https://static.tildacdn.com/tild3866-3735-4839-a539-313665653834/numbers-1.svg",
+    "https://static.tildacdn.com/tild6662-3964-4065-b663-373366386431/numbers-2.svg",
+    "https://static.tildacdn.com/tild3839-3237-4333-b364-396536646436/numbers-3.svg",
+    "https://static.tildacdn.com/tild3161-6361-4434-a437-353161373132/numbers-4.svg",
+    "https://static.tildacdn.com/tild6638-3331-4234-b636-353039353962/numbers-5.svg",
+    "https://static.tildacdn.com/tild3663-3131-4130-b831-363931656638/numbers-6.svg",
+    "https://static.tildacdn.com/tild6134-3834-4234-b635-646636353937/numbers-7.svg",
+    "https://static.tildacdn.com/tild6536-6565-4437-b865-353932656437/numbers-8.svg",
+  ]
+
+
+  
+  painNumbers.forEach((num, index) => {
+    num.src = painNumbers_URL[index]
+  })
+
 });
 
 
