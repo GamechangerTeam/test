@@ -378,28 +378,41 @@ document.addEventListener("DOMContentLoaded", function () {
       licensesWrapper.innerHTML = findedLicenses.content;
       licensesWrapper.style.maxHeight = licensesWrapper.scrollHeight + "px";
       itemMain.style.maxHeight = itemMain.scrollHeight + "px";
-    } else if (item && ready) {
+    } else if (item) {
       icon.classList.toggle("active");
       ready = false;
-      if (window.innerWidth >= 1200) {
-        !tarifs_background.classList.contains("active")
-          ? openPopup(item)
-          : closePopup(item);
-      } else {
-        let content = item.querySelector(".item__header").nextElementSibling;
 
-        if (content.style.maxHeight) {
-          content.style.transition = ".7s";
-          content.style.maxHeight = null;
-        } else {
-          content.style.transition = "1s";
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
+      let content = item.querySelector(".item__header").nextElementSibling;
+
+      if (content.style.maxHeight) {
+        content.style.transition = ".7s";
+        content.style.maxHeight = null;
+      } else {
+        content.style.transition = "1s";
+        content.style.maxHeight = content.scrollHeight + "px";
       }
 
-      setTimeout(() => {
-        ready = true;
-      }, 500);
+      // icon.classList.toggle("active");
+      // ready = false;
+      // if (window.innerWidth >= 1200) {
+      //   !tarifs_background.classList.contains("active")
+      //     ? openPopup(item)
+      //     : closePopup(item);
+      // } else {
+      //   let content = item.querySelector(".item__header").nextElementSibling;
+
+      //   if (content.style.maxHeight) {
+      //     content.style.transition = ".7s";
+      //     content.style.maxHeight = null;
+      //   } else {
+      //     content.style.transition = "1s";
+      //     content.style.maxHeight = content.scrollHeight + "px";
+      //   }
+      // }
+
+      // setTimeout(() => {
+      //   ready = true;
+      // }, 500);
     }
   });
 
@@ -500,79 +513,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // });
 
   // СЛАЙДЕРЫ НА БЛОКЕ МОДУЛЕЙ
-  const modulesBlockSwiper = new Swiper("#modulesBlockSwiper", {
-    speed: 500,
-    spaceBetween: 30,
-    slidesPerView: 1,
-    allowTouchMove: false,
-    // autoHeight: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      769: {
-        slidesPerView: 2,
-      },
-    },
-    on: {
-      slideChange: function () {
-        // Получаем активный слайд
-        if (this.activeIndex) {
-          toggler.style.left = "50%";
-        } else {
-          toggler.style.left = "0%";
-        }
-      },
-    },
-  });
-
-  const modulesCardSwiper = new Swiper("#modules-card-swiper1", {
-    speed: 500,
-    grabCursor: true,
-    mousewheel: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  const modulesCardSwiper2 = new Swiper("#modules-card-swiper2", {
-    speed: 500,
-    grabCursor: true,
-    mousewheel: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  const painBlockSwiper = new Swiper("#painBlockSwiper", {
-    direction: "horizontal",
-    slidesPerView: 1,
-    allowTouchMove: true,
-    spaceBetween: 30,
-
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    breakpoints: {
-      769: {
-        allowTouchMove: false,
-        spaceBetween: 0,
-      },
-    },
-  });
-
-  const possibilitiesBlockSwiper = new Swiper("#possibilitiesBlockSwiper", {
+  const implementationBlockSwiper = new Swiper("#implementationBlockSwiper", {
     direction: "horizontal",
     slidesPerView: 1,
     spaceBetween: 30,
@@ -582,59 +523,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       526: {
-        slidesPerView: 2,
+        slidesPerView: 5,
       },
-    },
-  });
-
-  const casesBlockSwiper = new Swiper("#casesBlockSwiper", {
-    direction: "horizontal",
-    slidesPerView: 1,
-    spaceBetween: 30,
-
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    breakpoints: {
-      526: {
-        slidesPerView: 2,
-      },
-    },
-  });
-
-  const trustUs = new Swiper("#trustUs", {
-    direction: "horizontal",
-    spaceBetween: 20,
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    mousewheel: true,
-    grid: {
-      rows: 3,
-    },
-    breakpoints: {
-      769: {
-        slidesPerView: 4,
-        slidesPerGroup: 2,
-        grid: {
-          rows: 2,
-        },
-      },
-
-      525: {
-        slidesPerView: 3,
-        slidesPerGroup: 2,
-        grid: {
-          rows: 2,
-        },
-      },
-    },
-    pagination: {
-      el: ".trustUs_container-pagination",
-    },
-
-    navigation: {
-      nextEl: ".trustUs_container-button-next",
-      prevEl: ".trustUs_container-button-prev",
     },
   });
 
@@ -700,9 +590,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-
   // ЛОГИКА НУМЕРОВКИ ПРОБЛЕМ В БИТРИКСЕ
-  const painNumbers = document.querySelectorAll(".pain__number")
+  const painNumbers = document.querySelectorAll(".pain__number");
 
   const painNumbers_URL = [
     "https://static.tildacdn.com/tild3866-3735-4839-a539-313665653834/numbers-1.svg",
@@ -713,14 +602,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://static.tildacdn.com/tild3663-3131-4130-b831-363931656638/numbers-6.svg",
     "https://static.tildacdn.com/tild6134-3834-4234-b635-646636353937/numbers-7.svg",
     "https://static.tildacdn.com/tild6536-6565-4437-b865-353932656437/numbers-8.svg",
-  ]
+  ];
 
-
-  
   painNumbers.forEach((num, index) => {
-    num.src = painNumbers_URL[index]
-  })
-
+    num.src = painNumbers_URL[index];
+  });
 });
-
-

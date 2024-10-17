@@ -58,38 +58,33 @@ $grayGradient: linear-gradient(
 }
 
 .glow-on-hover {
-  width: 220px;
-  height: 50px;
   border: none;
   outline: none;
   color: #fff;
   background: $black;
   cursor: pointer;
   position: relative;
-  z-index: 0;
-  border-radius: 10px;
+  // z-index: 0;
+  border-radius: 20px;
 }
 
 .glow-on-hover:before {
   content: "";
   background: linear-gradient(to right, #04d404 4.77%, #026e02 94.98%);
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: 0;
+  left: 0;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  filter: blur(2px);
+  width: 100%;
+  height: 100%;
   animation: glowing 20s linear infinite;
-  opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
+
 
 .glow-on-hover:after {
   z-index: -1;
@@ -100,7 +95,7 @@ $grayGradient: linear-gradient(
   background: $black;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 @keyframes glowing {
@@ -173,6 +168,7 @@ $grayGradient: linear-gradient(
   }
   @include mobile() {
     height: 50px !important;
+    font-size: 16px !important;
   }
 }
 
@@ -300,100 +296,6 @@ $grayGradient: linear-gradient(
   display: none !important;
 }
 
-// .contact_us__btns-container {
-//   width: 100%;
-//   position: relative;
-//   padding: 12px;
-//   @include grayBtn();
-//   button {
-//     border: none;
-//     background-color: transparent;
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     gap: 10px;
-//     justify-content: center;
-//   }
-
-//   .links-container {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     padding: 12px;
-//     display: grid;
-//     grid-template-columns: auto auto;
-//     justify-content: center;
-//   }
-
-//   a {
-//     // position: absolute;
-//     // height: calc(100% - 6px);
-//     aspect-ratio: 1/1;
-//     // top: 50%;
-//     // left: 50%;
-//     // transform: translate(-50%, -50%);
-//     // border-radius: 12px;
-//     background-color: #04d404;
-//     height: 100%;
-//     // display: grid;
-//     // place-items: center;
-//     // opacity: 0;
-//     // visibility: hidden;
-//   }
-
-//   &.active {
-//     button {
-//       animation: hideBtn 0.3s linear forwards;
-//     }
-
-//     a {
-//       transform: translate(0, -50%);
-//     }
-
-//     .whatsApp {
-//       animation: showWhatsapp 0.3s ease 0.3s forwards;
-//     }
-
-//     .instagram {
-//       animation: showInstagram 0.3s ease 0.3s forwards;
-
-//     }
-
-//     @keyframes hideBtn {
-//       to {
-//         scale: 0;
-//       }
-//     }
-
-//     @keyframes showWhatsapp {
-//       50% {
-//         scale: 1;
-//         opacity: 1;
-//         visibility: visible;
-//       }
-//       100% {
-//         left: 10%;
-//         opacity: 1;
-//         visibility: visible;
-//       }
-//     }
-//     @keyframes showInstagram {
-//       50% {
-//         scale: 1;
-//         opacity: 1;
-//         visibility: visible;
-//       }
-//       100% {
-//         opacity: 1;
-//         visibility: visible;
-//         left: 90%;
-//       }
-//     }
-//   }
-// }
 
 // #endregion
 
@@ -427,6 +329,7 @@ ul {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @include tablet {
@@ -546,7 +449,15 @@ ul {
   width: 100%;
   // height: 100%;
   @include mobile() {
-    padding: 100px 10px 0;
+    padding: 0 10px;
+  }
+}
+
+#main {
+  @include mobile() {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }
 
@@ -611,7 +522,7 @@ video {
 // #endregion
 
 .section {
-  min-height: 100dvh;
+  // min-height: 100dvh;
   @include pc {
     min-height: auto !important;
   }
@@ -1379,6 +1290,7 @@ header {
     position: relative;
   }
 
+
   
 
   ul {
@@ -1406,6 +1318,7 @@ header {
   }
 
   &__number {
+    aspect-ratio: 1/1;
     @include tablet() {
       height: 100px;
     }
@@ -1460,11 +1373,13 @@ header {
 
   &__card {
     border-radius: 20px;
-    border: 1px solid #04d404;
     overflow: hidden;
     margin-top: 50px;
-    box-shadow: -12px -12px 20px rgba(4, 212, 4, 0.13),
-    10px 10px 20px rgba(9, 90, 9, 0.49);
+    position: relative;
+    width: 100% !important;
+    height: auto !important;
+    // box-shadow: -12px -12px 20px rgba(4, 212, 4, 0.13),
+    // 10px 10px 20px rgba(9, 90, 9, 0.49);
 
     @include tablet() {
       margin-top: 30px;
@@ -1539,6 +1454,7 @@ header {
       .pain__days {
         padding: 5px 10px;
         position: relative;
+        isolation: isolate;
         &::before {
           content: "";
           position: absolute;
@@ -1601,7 +1517,7 @@ header {
     }
 
     @include mobile() {
-      padding: 100px 10px 0;
+      padding: 0 10px ;
     }
   }
   ul {
@@ -1841,6 +1757,7 @@ header {
       padding: 0;
       background: none;
       box-shadow: none;
+      height: auto !important;
     }
     #licenses {
       .item__header {
@@ -2093,7 +2010,7 @@ header {
     }
 
     @include mobile() {
-      padding: 40px 10px;
+      padding: 0;
       gap: 40px;
     }
 
@@ -2106,11 +2023,26 @@ header {
     @include tablet() {
       padding: 0;
     }
+    @include mobile() {
+      padding: 0 10px
+    }
   }
+
 
   .swiper {
     height: fit-content;
     align-self: center;
+    @include mobile() {
+    padding: 0 10px 20px;
+    display: none !important;
+
+    }
+    &-slide {
+      @media (min-width: 1201px) {
+        width: auto !important;
+        
+      }
+    }
     &-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -2125,7 +2057,9 @@ header {
         gap: 50px;
       }
       @include mobile() {
-        gap: 20px;
+        gap: 0;
+        display: flex;
+        flex-direction: row;
       }
     }
     &-pagination-bullet {
@@ -2139,7 +2073,7 @@ header {
     overflow: visible !important;
     height: fit-content;
 
-    @media (min-width: 1201px) {
+    @media (min-width: 1201px)  {
       &:nth-child(1) {
         grid-area: 1/1;
         justify-self: end;
@@ -2148,7 +2082,7 @@ header {
 
       &:nth-child(2) {
         grid-area: 2/1/2/3;
-        width: 50%;
+        width: 50% !important;
         transform: translateX(-10%);
         &::before {
           transform: scale(1, -1);
@@ -2164,7 +2098,7 @@ header {
       &:nth-child(4) {
         grid-column-start: 1.5 span;
         grid-area: 2/2/2/4 !important;
-        width: 50%;
+        width: 50% !important;
         transform: translateX(10%);
 
         &::before {
@@ -2190,10 +2124,13 @@ header {
       z-index: -1;
     }
 
+    @media (min-width: 526px ) and (max-width: 1200px) {
+      width: 80% !important;
+      
+    }
+
     @include pc() {
       height: auto;
-      // width: calc(100% - 100px);
-      width: 80%;
       &:nth-child(odd) {
         margin: 0;
         &::before {
@@ -2318,6 +2255,7 @@ header {
     }
 
     @include mobile() {
+      gap: 10px;
       button {
         font-size: 14px;
       }
@@ -2334,6 +2272,14 @@ header {
   }
 }
 
+#implementationBlockSwiper {
+  display: none; 
+  @include slider();
+  @include mobile() {
+    display: block !important;
+  }
+}
+
 .guarantee-block {
   overflow-x: hidden;
   color: black;
@@ -2342,6 +2288,7 @@ header {
 
   @include mobile() {
     padding-bottom: 20px;
+    padding-top: 0;
   }
 
   .container {
@@ -3423,7 +3370,7 @@ header {
       height: auto;
     }
     @include mobile() {
-      padding: 40px 10px;
+      padding: 0 10px;
     }
   }
 
