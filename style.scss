@@ -143,8 +143,6 @@ $grayGradient: linear-gradient(
   }
 }
 
-
-
 @mixin greenBtn {
   border: none;
   background: linear-gradient(134.17deg, #04d404 4.98%, #55aa55 94.88%);
@@ -423,7 +421,6 @@ ul {
     }
   }
 }
-
 
 * {
   box-sizing: border-box;
@@ -1060,7 +1057,6 @@ video {
   }
 }
 
-
 .cases_all {
   color: white;
   font-size: 16px;
@@ -1383,6 +1379,8 @@ header {
     position: relative;
   }
 
+  
+
   ul {
     margin-top: 80px;
     gap: 80px;
@@ -1399,6 +1397,7 @@ header {
     gap: 50px;
     grid-template-columns: 180px 1fr;
 
+
     @include tablet() {
       display: flex;
       flex-direction: column;
@@ -1409,6 +1408,13 @@ header {
   &__number {
     @include tablet() {
       height: 100px;
+    }
+  }
+  &__little-text {
+    font-size: 24px;
+    color: #808080;
+    @include mobile() {
+      font-size: 18px;
     }
   }
 
@@ -1457,6 +1463,8 @@ header {
     border: 1px solid #04d404;
     overflow: hidden;
     margin-top: 50px;
+    box-shadow: -12px -12px 20px rgba(4, 212, 4, 0.13),
+    10px 10px 20px rgba(9, 90, 9, 0.49);
 
     @include tablet() {
       margin-top: 30px;
@@ -2062,7 +2070,7 @@ header {
 
   p {
     font-size: 24px;
-    font-weight: 700
+    font-weight: 700;
   }
 
   .open_left_section {
@@ -2283,8 +2291,7 @@ header {
 
     @include mobile() {
       align-self: flex-start;
-    font-size: 18px;
-
+      font-size: 18px;
     }
   }
 
@@ -2361,9 +2368,7 @@ header {
         transform: none;
         left: 0;
         height: 99%;
-      border-radius: 25px;
-
-
+        border-radius: 25px;
       }
     }
   }
@@ -2553,13 +2558,13 @@ header {
             }
           }
 
-          @include mobile(){
+          @include mobile() {
             left: -970px;
             animation: moveRight-mobile 20s linear infinite;
             display: flex;
             gap: 20px;
             align-items: center;
-            @keyframes moveRight-mobile{
+            @keyframes moveRight-mobile {
               from {
                 left: -970px;
               }
@@ -3397,7 +3402,6 @@ header {
     min-height: 100vh;
     height: auto;
   }
-
 
   .gradient-container {
     margin: 0 auto;

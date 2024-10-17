@@ -491,13 +491,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const mainSlider = new fullpage("#main", {
-    scrollOverflow: true,
-    scrolloverflowmacstyle: false,
-    menu: "#menu",
-    anchors: ["1", "2", "3", "4", "5", "6", "7", "8"],
-    responsiveWidth: 1200,
-  });
+  // const mainSlider = new fullpage("#main", {
+  //   scrollOverflow: true,
+  //   scrolloverflowmacstyle: false,
+  //   menu: "#menu",
+  //   anchors: ["1", "2", "3", "4", "5", "6", "7", "8"],
+  //   responsiveWidth: 1200,
+  // });
 
   // СЛАЙДЕРЫ НА БЛОКЕ МОДУЛЕЙ
   const modulesBlockSwiper = new Swiper("#modulesBlockSwiper", {
