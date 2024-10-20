@@ -385,10 +385,8 @@ document.addEventListener("DOMContentLoaded", function () {
       let content = item.querySelector(".item__header").nextElementSibling;
 
       if (content.style.maxHeight) {
-        content.style.transition = ".7s";
         content.style.maxHeight = null;
       } else {
-        content.style.transition = "1s";
         content.style.maxHeight = content.scrollHeight + "px";
       }
 
