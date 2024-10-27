@@ -2,7 +2,6 @@ const licensesInfo = [
   {
     name: "Бесплатный",
     content: `
-                    <div class="licenses__settings">
                       <p class="licenses__settings--item1">
                         Тариф доступен всем пользователям
                       </p>
@@ -21,37 +20,11 @@ const licensesInfo = [
                       <p class="licenses__settings--item5">
                         Бесплатно за всех пользователей
                       </p>
-                    </div>
-                    <div class="item__main__content">
-                      <p>Внутренний ИИ</p>
-                      <p>
-                        Календарь для каждого сотрудника для планирования
-                        мероприятий
-                      </p>
-                      <p>Организационная структура компании</p>
-                      <p>Виртуальный отдел управления персоналом</p>
-                      <p>
-                        Новостная лента в стиле Facebook для внутренних
-                        коммуникаций.
-                      </p>
-                      <p>Внутренний мессенджер с функциями WhatsApp</p>
-                      <p>
-                        Контакт-центр - интегрирующий все каналы заказов в
-                        единую систему управления.
-                      </p>
-                      <p>Конструктор сайтов с бесплатным хостингом</p>
-                      <p>База знаний компании</p>
-                      <p>Каталог товаров</p>
-                      <p>Автоматизация продаж через CRM</p>
-                      <p>Чек-ин на работе с геопозицией</p>
-                      <p>Работа с виртуальными задачами</p>
-                    </div>
                   `,
   },
   {
     name: "Базовый",
     content: `
-                    <div class="licenses__settings">
                       <p class="licenses__settings--item1">
                         До 5 пользователей
                       </p>
@@ -71,33 +44,11 @@ const licensesInfo = [
                         9&nbsp;000₸/мес <br>
                         86&nbsp;400₸/год
                       </p>
-                    </div>
-                    <div class="item__main__content">
-                     <p>Складской учет</p>
-                     <p>Внутренний ИИ</p>
-                     <p>Демонстрация экрана</p>
-                     <p>Контакт-центр - интегрирующий все каналы  заказов в единую систему управления.</p>
-                     <p>Новостная лента в стиле Facebook  для внутренних коммуникаций.</p>
-                     <p>Интеграция с почтой ( 7 дней )</p>
-                     <p>Внутренний мессенджер с функциями WhatsApp</p>
-                     <p>Автогенерация счетов на оплату</p>
-                     <p>Конструктор сайтов с бесплатным хостингом</p>
-                     <p>Календарь для каждого сотрудника для планирования мероприятий</p>
-                     <p>Организационная структура компании</p>
-                     <p>Виртуальный отдел управления персоналом</p>
-                     <p>Автоматизация рабочих процессов через CRM</p>
-                     <p>База знаний компании</p>
-                     <p>Чек-ин на работе с геопозицией</p>
-                     <p>Автоматизация продаж через CRM</p>
-                     <p>Каталог товаров</p>
-                     <p>Работа с виртуальными задачами</p>
-                    </div>
                   `,
   },
   {
     name: "Стандартный",
     content: `
-                    <div class="licenses__settings">
                       <p class="licenses__settings--item1">
                         До 50 пользователей
                       </p>
@@ -115,40 +66,11 @@ const licensesInfo = [
                         24&nbsp;000₸/мес <br>
                         230&nbsp;400₸/год
                       </p>
-                    </div>
-                    <div class="item__main__content">
-                      <p>Новостная лента в стиле Facebook  для внутренних коммуникаций.</p>
-                    <p>Внутренний мессенджер с функциями WhatsApp
-и редактировнием документов</p>
-                    <p>Внутренний ИИ</p>
-                    <p>Демонстрация экрана</p>
-                    <p>Контакт-центр - интегрирующий все каналы  заказов в единую систему управления.</p>
-                    <p>Календарь для каждого сотрудника для планирования мероприятий</p>
-                    <p>Виртуальный отдел управления персоналом</p>
-                    <p>Организационная структура компании</p>
-                    <p>Автогенерация счетов на оплату</p>
-                    <p>Автоматизация рабочих процессов через CRM</p>
-                    <p>Работа с виртуальными задачами</p>
-                    <p>Интеграция с почтой ( 7 дней )</p>
-                    <p>Складской учет</p>
-                    <p>Возможность пригласить внешних пользователей
-в рабочие группы ( Экстра-нет )</p>
-                    <p>Коэффициент полезности каждого сотрудника</p>
-                    <p>Работа с виртуальными пректами</p>
-                    <p>Bi- конструктор</p>
-                    <p>Маркетинговый кабинет</p>
-                    <p>Конструктор сайтов с бесплатным хостингом</p>
-                    <p>База знаний компании</p>
-                    <p>Чек-ин на работе с геопозицией</p>
-                    <p>Автоматизация продаж через CRM</p>
-                    <p>Каталог товаров</p>
-                    </div>
                   `,
   },
   {
     name: "Профессиональный",
     content: `
-                    <div class="licenses__settings">
                       <p class="licenses__settings--item1">
                         До 100 пользователей
                       </p>
@@ -166,41 +88,11 @@ const licensesInfo = [
                         45&nbsp;000₸/мес <br>
                         432&nbsp;000₸/год
                       </p>
-                    </div>
-                    <div class="item__main__content">
-                    <p>Внутренний ИИ</p>
-                    <p>Демонстрация экрана</p>
-                    <p>Конструктор сайтов с бесплатным хостингом</p>
-                    <p>Контакт-центр - интегрирующий все каналы  заказов в единую систему управления.</p>
-                    <p>Календарь для каждого сотрудника для планирования мероприятий</p>
-                    <p>Виртуальный отдел управления персоналом</p>
-                    <p>Организационная структура компании</p>
-                    <p>База знаний компании с возможностью ограничить права доступа</p>
-                    <p>Чек-ин на работе с геопозицией</p>
-                    <p>Автогенерация счетов на оплату</p>
-                    <p>Автоматизация рабочих процессов через CRM</p>
-                    <p>Автогенерация счетов на оплату и КП</p>
-                    <p>Виртуальные задачи с учетом времени, делегированием и пользовательскими полями</p>
-                    <p>Интеграция с почтой ( 7 дней )</p>
-                    <p>Складской учет</p>
-                    <p>Возможность пригласить внешних пользователей в рабочие группы ( Экстра-нет )</p>
-                    <p>Коэффициент полезности каждого сотрудника</p>
-                    <p>Работа с виртуальными пректами</p>
-                    <p>Bi- конструктор и конструктор отчетов</p>
-                    <p>Маркетинговый кабинет</p>
-                    <p>Задачи по подразделениям</p>
-                    <p>Бизнес-процессы и смарт-процессы</p>
-                    <p>Сквозная аналитика</p>
-                    <p>Автоматизация продаж через CRM</p>
-                    <p>Каталог товаров</p>
-                    <p>Гибкие методологии и управления командами ( Скрам )</p>
-                    </div>
                   `,
   },
   {
     name: "Энтерпрайз",
     content: `
-                    <div class="licenses__settings">
                       <p class="licenses__settings--item1">
                         от 250 пользователей
                       </p>
@@ -217,39 +109,6 @@ const licensesInfo = [
                       <p class="licenses__settings--item5">
                         100&nbsp;000₸/мес
                       </p>
-                    </div>
-                    <div class="item__main__content">
-                      <p>Новостная лента в стиле Facebook  для внутренних коммуникаций.</p>
-                      <p>Внутренний мессенджер с функциями WhatsApp и редактировнием документов</p>
-                      <p>Внутренний ИИ</p>
-                      <p>Демонстрация экрана</p>
-                      <p>Конструктор сайтов с бесплатным хостингом</p>
-                      <p>Контакт-центр - интегрирующий все каналы  заказов в единую систему управления.</p>
-                      <p>Календарь для каждого сотрудника для планирования мероприятий</p>
-                      <p>Виртуальный отдел управления персоналом</p>
-                      <p>Организационная структура компании</p>
-                      <p>База знаний компании с возможностью ограничить права доступа</p>
-                      <p>Чек-ин на работе с геопозицией</p>
-                      <p>Автоматизация продаж через CRM</p>
-                      <p>Автогенерация счетов на оплату</p>
-                      <p>Автоматизация рабочих процессов через CRM</p>
-                      <p>Автогенерация счетов на оплату и КП</p>
-                      <p>Каталог товаров</p>
-                      <p>Виртуальные задачи с учетом времени, делегированием и пользовательскими полями</p>
-                      <p>Интеграция с почтой ( 7 дней )</p>
-                      <p>Складской учет</p>
-                      <p>Возможность пригласить внешних пользователей в рабочие группы ( Экстра-нет )</p>
-                      <p>Коэффициент полезности каждого сотрудника</p>
-                      <p>Работа с виртуальными пректами</p>
-                      <p>Bi- конструктор и конструктор отчетов</p>
-                      <p>Маркетинговый кабинет</p>
-                      <p>Задачи по подразделениям</p>
-                      <p>Гибкие методологии и управления командами ( Скрам )</p>
-                      <p>Бизнес-процессы и смарт-процессы</p>
-                      <p>Сквозная аналитика</p>
-                      <p>Создание и управление филиалами</p>
-                      <p>Интерпрайз-кластер  с ускорением до 10-ти раз</p>
-                    </div>
               `,
   },
 ];
@@ -359,17 +218,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Обработчик кликов по элементам
 
-  tarifsList.addEventListener("click", (e) => {
+  tarifsList?.addEventListener("click", (e) => {
     let item = e.target.closest(".item");
+    let itemHeader = e.target.closest(".item__header");
     if (item.id === "individual") return;
     let licensesBtn = e.target.closest(".change-licenses-tarif");
-    const icon = item.querySelector(".plus-icon");
+    // const icon = item.querySelector(".plus-icon");
+    const icon = item.querySelector(".pain__arrow");
 
     if (licensesBtn) {
       document
         .querySelector(".change-licenses-tarif.active")
         .classList.remove("active");
-      let licensesWrapper = item.querySelector(".licenses-wrapper");
+      let licensesWrapper = item.querySelector(".licenses__settings");
       let itemMain = item.querySelector(".item__main");
       let dataInfo = licensesBtn.getAttribute("data-name");
       licensesBtn.classList.add("active");
@@ -378,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
       licensesWrapper.innerHTML = findedLicenses.content;
       licensesWrapper.style.maxHeight = licensesWrapper.scrollHeight + "px";
       itemMain.style.maxHeight = itemMain.scrollHeight + "px";
-    } else if (item) {
+    } else if (itemHeader) {
       icon.classList.toggle("active");
       ready = false;
 
@@ -467,6 +328,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", () => {
       let sectionName = btn.getAttribute("data-name");
       btn.disabled = true;
+      document.body.style.overflow = "hidden";
       setTimeout(() => {
         btn.disabled = false;
       }, 500);
@@ -483,6 +345,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", () => {
       let sectionName = btn.getAttribute("data-name");
       addClassToSection(sectionName);
+      document.body.style.overflow = "auto";
     });
   });
 
@@ -592,17 +455,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const painNumbers = document.querySelectorAll(".pain__number");
 
   const painNumbers_URL = [
-    "https://static.tildacdn.com/tild3866-3735-4839-a539-313665653834/numbers-1.svg",
-    "https://static.tildacdn.com/tild6662-3964-4065-b663-373366386431/numbers-2.svg",
-    "https://static.tildacdn.com/tild3839-3237-4333-b364-396536646436/numbers-3.svg",
-    "https://static.tildacdn.com/tild3161-6361-4434-a437-353161373132/numbers-4.svg",
-    "https://static.tildacdn.com/tild6638-3331-4234-b636-353039353962/numbers-5.svg",
-    "https://static.tildacdn.com/tild3663-3131-4130-b831-363931656638/numbers-6.svg",
-    "https://static.tildacdn.com/tild6134-3834-4234-b635-646636353937/numbers-7.svg",
-    "https://static.tildacdn.com/tild6536-6565-4437-b865-353932656437/numbers-8.svg",
+    "https://static.tildacdn.com/tild3538-3363-4233-b632-313536313161/num1.svg",
+    "https://static.tildacdn.com/tild3466-3432-4536-b630-313734386666/num2.svg",
+    "https://static.tildacdn.com/tild6339-6366-4133-a335-383938323465/num3.svg",
+    "https://static.tildacdn.com/tild3533-3737-4862-a130-386439323039/num4.svg",
+    "https://static.tildacdn.com/tild6165-3465-4561-b139-653037356135/num5.svg",
+    "https://static.tildacdn.com/tild3366-6165-4937-a564-616633356261/num6.svg",
+    "https://static.tildacdn.com/tild6562-3938-4535-a162-653030643261/num7.svg",
+    "https://static.tildacdn.com/tild3937-6230-4632-b662-636330366465/num8.svg",
   ];
 
   painNumbers.forEach((num, index) => {
     num.src = painNumbers_URL[index];
   });
+
+  const h1 = document.querySelector("h1");
+
+  if (h1.offsetWidth === window.innerWidth - 20) {
+    h1.style.fontSize = "22px";
+    console.log(h1.offsetWidth, h1.offsetHeight);
+  }
 });
