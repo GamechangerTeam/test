@@ -1059,7 +1059,7 @@ video {
 }
 @media (max-width: 525px) {
   .hero .container p {
-    font-size: 14px;
+    font-size: 10px;
     margin: 25px 0;
   }
 }
@@ -1249,7 +1249,7 @@ video {
 @media (max-width: 375px) {
   .hero__btns button,
   .hero__btns a {
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
 }
 .hero__btns button {
@@ -1592,9 +1592,9 @@ video {
     font-size: 16px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 525px) {
   .pain__card__text-wrapper p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .pain__card__footer {
@@ -2078,7 +2078,7 @@ video {
 }
 @media (max-width: 768px) {
   .tarifs-block ul .item__main__content p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .tarifs-block ul .item__main .open_left_section {
