@@ -1059,8 +1059,11 @@ video {
 }
 @media (max-width: 525px) {
   .hero .container p {
-    font-size: 10px;
+    font-size: 14px;
     margin: 25px 0;
+  }
+  .hero .container p:nth-child(3) {
+    font-size: 12px;
   }
 }
 .hero__textImg {

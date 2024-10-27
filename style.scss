@@ -1213,8 +1213,11 @@ video {
       }
 
       @include mobile() {
-        font-size: 10px;
+        font-size: 14px;
         margin: 25px 0;
+        &:nth-child(3) {
+          font-size: 12px;
+        }
       }
     }
   }
