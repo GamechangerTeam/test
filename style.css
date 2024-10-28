@@ -1045,6 +1045,11 @@ video {
     margin-top: 5px;
   }
 }
+@media (max-width: 950px) and (max-height: 450px) {
+  .hero .container h1 {
+    font-size: 32px;
+  }
+}
 .hero .container p {
   font-size: 30px;
   text-align: center;
@@ -1064,6 +1069,12 @@ video {
   }
   .hero .container p:nth-child(3) {
     font-size: 12px;
+  }
+}
+@media (max-width: 950px) and (max-height: 450px) {
+  .hero .container p:nth-child(3) {
+    font-size: 12px;
+    margin: 40px 0;
   }
 }
 .hero__textImg {
@@ -1090,6 +1101,11 @@ video {
     width: 70px;
   }
 }
+@media (max-width: 950px) and (max-height: 450px) {
+  .hero__pageLogo {
+    width: 70px;
+  }
+}
 .hero__1c-bitrix {
   font-size: 100px !important;
   margin: 0 !important;
@@ -1111,6 +1127,11 @@ video {
   }
 }
 @media (max-width: 375px) {
+  .hero__1c-bitrix {
+    font-size: 32px !important;
+  }
+}
+@media (max-width: 950px) and (max-height: 450px) {
   .hero__1c-bitrix {
     font-size: 32px !important;
   }
@@ -1144,6 +1165,9 @@ video {
   width: fit-content;
   padding: 0 10px;
 }
+.hero__statistics__card span {
+  text-align: center;
+}
 .hero__statistics__card span:first-child {
   font-size: 64px;
   font-weight: 600;
@@ -1153,15 +1177,20 @@ video {
     font-size: 32px;
   }
 }
+@media (max-width: 950px) and (max-height: 450px) {
+  .hero__statistics__card span:first-child {
+    font-size: 24px;
+  }
+}
 .hero__statistics__card span:last-child {
   opacity: 0.6;
   color: white;
   font-size: 1rem;
   font-weight: 400;
 }
-@media (max-width: 768px) {
-  .hero__statistics__card span {
-    text-align: center;
+@media (max-width: 950px) and (max-height: 450px) {
+  .hero__statistics__card span:last-child {
+    font-size: 14px;
   }
 }
 .hero__statistics--vertical-line {
@@ -1253,6 +1282,18 @@ video {
   .hero__btns button,
   .hero__btns a {
     font-size: 12px !important;
+  }
+}
+@media (max-width: 950px) and (max-height: 450px) {
+  .hero__btns button,
+  .hero__btns a {
+    font-size: 12px !important;
+    padding: 12px !important;
+    height: auto !important;
+  }
+  .hero__btns button img,
+  .hero__btns a img {
+    width: 20px;
   }
 }
 .hero__btns button {
@@ -1355,6 +1396,12 @@ video {
     display: none;
   }
 }
+@media (max-width: 950px) and (max-height: 450px) {
+  .hero__backroundImg {
+    max-width: 250px;
+    right: 100px;
+  }
+}
 
 .pain .container {
   position: relative;
@@ -1380,6 +1427,12 @@ video {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 950px) and (max-height: 450px) {
+  .pain ul {
+    margin-top: 50px;
+    gap: 50px;
+  }
+}
 @media (max-width: 525px) {
   .pain ul {
     margin-top: 50px;
@@ -1394,7 +1447,7 @@ video {
 .pain li .pain__block {
   grid-column-start: 2;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pain li {
     display: grid;
     grid-template: auto auto/1fr auto;
@@ -1416,7 +1469,7 @@ video {
 .pain li:first-child .pain__number {
   width: 125px;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pain li:first-child .pain__number {
     width: auto;
   }
@@ -1424,7 +1477,7 @@ video {
 .pain__number {
   height: 75px;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pain__number {
     grid-area: 1/2;
     padding-right: 18px;
@@ -1437,6 +1490,12 @@ video {
   font-weight: 900 !important;
 }
 @media (max-width: 525px) {
+  .pain h2 {
+    font-size: 24px !important;
+    line-height: 20px;
+  }
+}
+@media (max-width: 950px) and (max-height: 450px) {
   .pain h2 {
     font-size: 24px !important;
     line-height: 20px;
@@ -1455,17 +1514,31 @@ video {
     display: block;
   }
 }
+@media (max-width: 950px) and (max-height: 450px) {
+  .pain__little-text {
+    font-size: 10px;
+  }
+}
 .pain h3 {
   font-weight: 300;
   font-size: 24px;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pain h3 {
     padding-left: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .pain h3 {
     font-size: 16px;
   }
 }
 @media (max-width: 525px) {
+  .pain h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 950px) and (max-height: 450px) {
   .pain h3 {
     font-size: 14px;
   }
@@ -1485,7 +1558,19 @@ video {
     font-size: 24px;
   }
 }
+@media (max-width: 950px) and (max-height: 450px) {
+  .pain h4 span {
+    font-size: 24px;
+  }
+}
 @media (max-width: 525px) {
+  .pain h4 {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+  }
+}
+@media (max-width: 950px) and (max-height: 450px) {
   .pain h4 {
     flex-direction: column;
     align-items: flex-start;
@@ -1510,7 +1595,7 @@ video {
 .pain .glow-on-hover {
   width: 90%;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pain .glow-on-hover {
     width: 100%;
     all: unset;
@@ -1526,7 +1611,7 @@ video {
   width: 100%;
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pain__card {
     border: 1px solid #04d404;
   }
@@ -1600,6 +1685,11 @@ video {
     font-size: 12px;
   }
 }
+@media (max-width: 950px) and (max-height: 450px) {
+  .pain__card__text-wrapper p {
+    font-size: 12px;
+  }
+}
 .pain__card__footer {
   display: flex;
   justify-content: space-between;
@@ -1647,6 +1737,15 @@ video {
 @media (max-width: 525px) {
   .pain__card__footer button {
     margin-left: auto;
+    font-size: 14px !important;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 950px) and (max-height: 450px) {
+  .pain__card__footer button {
+    font-size: 14px !important;
+    padding: 8px 12px;
+    height: auto !important;
   }
 }
 @media (max-width: 525px) {

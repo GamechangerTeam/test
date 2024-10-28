@@ -34,6 +34,12 @@
     @content;
   }
 }
+
+@mixin mobile-vertical {
+  @media (max-width: 950px) and (max-height: 450px) {
+    @content;
+  }
+}
 // #endregion
 
 // #region ЦВЕТА
@@ -1201,6 +1207,10 @@ video {
         font-size: 32px;
         margin-top: 5px;
       }
+      @include mobile-vertical() {
+        font-size: 32px;
+
+      }
     }
     p {
       font-size: 30px;
@@ -1217,6 +1227,13 @@ video {
         margin: 25px 0;
         &:nth-child(3) {
           font-size: 12px;
+        }
+      }
+
+      @include mobile-vertical() {
+        &:nth-child(3) {
+          font-size: 12px;
+          margin: 40px 0;
         }
       }
     }
@@ -1240,6 +1257,11 @@ video {
     @include mobile() {
       width: 70px;
     }
+
+    @include mobile-vertical() {
+      width: 70px;
+
+    }
   }
 
   &__1c-bitrix {
@@ -1261,6 +1283,11 @@ video {
     @include mobile-min() {
       font-size: 32px !important;
     }
+    @include mobile-vertical() {
+      font-size: 32px !important;
+
+
+    }
   }
 
   &__statistics {
@@ -1271,11 +1298,6 @@ video {
     br {
       display: none;
     }
-    // @include tablet() {
-    //   display: flex;
-    //   flex-direction: column;
-    //   gap: 28px;
-    // }
     @include mobile() {
       flex-direction: column;
       align-self: flex-start;
@@ -1293,19 +1315,18 @@ video {
       width: fit-content;
       padding: 0 10px;
 
-      // @include tablet() {
-      //   padding: 0;
-      //   flex-direction: row;
-      //   align-items: center;
-      //   gap: 10px;
-      // }
 
       span {
+        text-align: center;
+
         &:first-child {
           font-size: 64px;
           font-weight: 600;
           @include tablet() {
             font-size: 32px;
+          }
+          @include mobile-vertical() {
+            font-size: 24px;
           }
         }
         &:last-child {
@@ -1313,9 +1334,9 @@ video {
           color: white;
           font-size: 1rem;
           font-weight: 400;
-        }
-        @include tablet() {
-          text-align: center;
+          @include mobile-vertical() {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -1370,8 +1391,6 @@ video {
     margin-top: 70px;
     width: 100%;
 
-    @include tablet() {
-    }
     @include mobile() {
       margin-top: 25px;
       gap: 19px;
@@ -1394,9 +1413,6 @@ video {
       img {
         width: 24px;
       }
-      @include tablet() {
-        // font-size: ;
-      }
       @include mobile() {
         padding: 12px !important;
         img {
@@ -1407,6 +1423,15 @@ video {
       @include mobile-min() {
         font-size: 12px !important;
       }
+
+      @include mobile-vertical() {
+        font-size: 12px !important;
+        padding: 12px !important;
+        height: auto !important;
+        img {
+          width: 20px;
+        }
+      }
     }
     button {
       @include grayBtn();
@@ -1416,8 +1441,6 @@ video {
     a {
       width: fit-content;
       @include greenBtn();
-      // font-size: 10px !important;
-      // width: fit-content;s
     }
   }
 
@@ -1448,6 +1471,10 @@ video {
     @include mobile() {
       display: none;
     }
+    @include mobile-vertical() {
+      max-width: 250px;
+      right: 100px;
+    }
   }
 }
 
@@ -1474,6 +1501,10 @@ video {
     gap: 50px;
     display: flex;
     flex-direction: column;
+    @include mobile-vertical() {
+      margin-top: 50px;
+      gap: 50px;
+    }
     @include mobile() {
       margin-top: 50px;
       gap: 50px;
@@ -1488,7 +1519,7 @@ video {
     .pain__block {
       grid-column-start: 2;
     }
-    @include tablet() {
+    @include laptop() {
       display: grid;
       grid-template: auto auto / 1fr auto;
       gap: 20px 5px;
@@ -1505,11 +1536,11 @@ video {
         height: 32px;
       }
     }
+
     &:first-child {
       .pain__number {
         width: 125px;
-        @include tablet() {
-          // margin: 0 auto;
+        @include laptop() {
           width: auto;
         }
       }
@@ -1518,7 +1549,7 @@ video {
 
   &__number {
     height: 75px;
-    @include tablet() {
+    @include laptop() {
       grid-area: 1/2;
       padding-right: 18px;
       width: auto;
@@ -1530,6 +1561,11 @@ video {
   h2 {
     font-weight: 900 !important;
     @include mobile() {
+      font-size: 24px !important;
+      line-height: 20px;
+    }
+
+    @include mobile-vertical() {
       font-size: 24px !important;
       line-height: 20px;
     }
@@ -1545,18 +1581,31 @@ video {
       font-size: 10px;
       display: block;
     }
+    @include mobile-vertical() {
+      font-size: 10px;
+
+    }
   }
 
   h3 {
     font-weight: 300;
     font-size: 24px;
 
-    @include tablet() {
+    @include laptop() {
       padding-left: 18px;
+
+    }
+
+    @include tablet() {
       font-size: 16px;
     }
     @include mobile() {
       font-size: 14px;
+    }
+
+    @include mobile-vertical() {
+      font-size: 14px;
+
     }
   }
 
@@ -1571,9 +1620,20 @@ video {
       @include mobile() {
         font-size: 24px;
       }
+
+      @include mobile-vertical() {
+        font-size: 24px;
+
+      }
     }
 
     @include mobile() {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 12px;
+    }
+
+    @include mobile-vertical() {
       flex-direction: column;
       align-items: flex-start;
       font-size: 12px;
@@ -1596,7 +1656,7 @@ video {
 
   .glow-on-hover {
     width: 90%;
-    @include tablet() {
+    @include laptop() {
       width: 100%;
       all: unset;
       &::before,
@@ -1612,7 +1672,7 @@ video {
     position: relative;
     width: 100%;
     height: auto;
-    @include tablet() {
+    @include laptop() {
       border: 1px solid #04d404;
     }
 
@@ -1630,6 +1690,7 @@ video {
         @include pc() {
           font-size: 16px !important;
         }
+
       }
 
       @include laptop() {
@@ -1681,7 +1742,10 @@ video {
           font-size: 12px;
         }
 
-  
+        @include mobile-vertical() {
+          font-size: 12px;
+
+        }
       }
     }
 
@@ -1704,6 +1768,15 @@ video {
         @include grayBtn();
         @include mobile() {
           margin-left: auto;
+          font-size: 14px !important;
+          padding: 8px 12px;
+        }
+
+        @include mobile-vertical() {
+          font-size: 14px !important;
+          padding: 8px 12px;
+          height: auto !important;
+
         }
       }
 
