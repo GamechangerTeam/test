@@ -201,7 +201,7 @@ $grayGradient: linear-gradient(
   }
 
   @include laptop() {
-    font-size: 14px;
+    font-size: 18px;
     padding: 12px 24px;
   }
 
@@ -223,6 +223,8 @@ $grayGradient: linear-gradient(
   font-weight: 600;
   font-size: 20px;
   transition: 0.3s;
+  padding: 12px 24px;
+
   box-shadow: -12px -12px 20px rgba(4, 212, 4, 0.13),
     10px 10px 20px rgba(9, 90, 9, 0.49);
   svg {
@@ -1207,18 +1209,33 @@ video {
       }
     }
     p {
-      font-size: 30px;
+      font-size: 28px;
       text-align: center;
       margin: 36px 0 70px;
       max-width: 750px;
       font-weight: 300;
-      @include laptop() {
+      @include tablet() {
+        font-size: 26px;
+      }
+
+      @media (max-width: 680px) {
+        font-size: 22px;
+      }
+
+      @media (max-width: 580px) {
         font-size: 18px;
       }
 
       @include mobile() {
-        font-size: 14px;
+        font-size: 16px;
         margin: 25px 0;
+      }
+
+      @media (max-width: 420px) {
+        font-size: 14px;
+      }
+
+      @include mobile-min() {
         &:nth-child(3) {
           font-size: 12px;
         }
@@ -1239,6 +1256,10 @@ video {
       margin-right: 0;
     }
     @include laptop() {
+      width: 120px;
+    }
+
+    @include tablet() {
       width: 100px;
     }
     @include mobile() {
@@ -1252,11 +1273,19 @@ video {
     font-weight: 700 !important;
 
     @include laptop() {
+      font-size: 80px !important;
+    }
+
+    @include tablet() {
       font-size: 60px !important;
     }
 
+    @media (max-width: 560px) {
+      font-size: 54px !important;
+    }
+
     @include mobile() {
-      font-size: 42px !important;
+      font-size: 38px !important;
     }
 
     @include mobile-min() {
@@ -1290,13 +1319,25 @@ video {
       padding: 0 10px;
 
       span {
-        text-align: center;
+        text-align: left;
+
+        @include tablet() {
+          text-align: center;
+        }
 
         &:first-child {
           font-size: 64px;
           font-weight: 600;
           @include laptop() {
-            font-size: 32px;
+            font-size: 48px;
+          }
+
+          @include tablet() {
+            font-size: 42px;
+          }
+
+          @media (max-width: 580px) {
+            font-size: 36px;
           }
         }
         &:last-child {
@@ -1503,8 +1544,11 @@ video {
       grid-area: 1/2;
       padding-right: 18px;
       width: auto;
-      height: 30px;
+      height: 50px;
       margin-right: auto;
+    }
+    @include tablet() {
+      height: 32px;
     }
   }
 
@@ -1512,7 +1556,6 @@ video {
     font-weight: 900 !important;
     @include mobile() {
       font-size: 24px !important;
-      line-height: 20px;
     }
   }
 
@@ -1525,7 +1568,6 @@ video {
       font-size: 18px;
       display: block;
       margin-top: 5px;
-
     }
     @include mobile() {
       margin-top: 10px;
@@ -1541,8 +1583,8 @@ video {
       padding-left: 18px;
     }
 
-    @include laptop() {
-      font-size: 16px;
+    @include tablet() {
+      font-size: 18px;
     }
     @include mobile() {
       font-size: 14px;
@@ -1562,16 +1604,27 @@ video {
       }
     }
 
-    @include laptop() {
-      font-size: 18px;
+    @media (max-width: 860px) {
+      font-size: 20px;
+    }
+
+    @include tablet() {
+      font-size: 16px;
       span {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
 
-    @include mobile() {
+    @media (max-width: 620px) {
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 380px) {
       font-size: 12px;
     }
   }
@@ -1583,7 +1636,8 @@ video {
     &.active {
       transform: rotateX(180deg);
     }
-    @include mobile() {
+
+    @media (max-width: 620px) {
       position: absolute;
       right: 16px;
       bottom: 16px;
@@ -1591,7 +1645,6 @@ video {
   }
 
   .glow-on-hover {
-    width: 90%;
     @include laptop() {
       width: 100%;
       all: unset;
@@ -1622,17 +1675,21 @@ video {
       position: relative;
 
       &--bitrix-text {
-        font-size: 30px !important;
+        font-size: 20px !important;
         @include pc() {
           font-size: 16px !important;
         }
+
+        @include tablet() {
+          font-size: 14px !important;
+        }
       }
 
-      @include laptop() {
+      @include tablet() {
         gap: 12px;
       }
 
-      @include mobile() {
+      @media (max-width: 620px) {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 16px;
@@ -1669,7 +1726,7 @@ video {
           left: -16px;
         }
 
-        @include laptop() {
+        @include tablet() {
           font-size: 16px;
         }
 
@@ -1687,10 +1744,13 @@ video {
       p {
         font-size: 20px;
         font-weight: 900;
-        line-height: 28px;
-        @include laptop() {
-          font-size: 14px;
+        @include tablet() {
+          font-size: 18px;
           font-weight: 600;
+        }
+
+        @include mobile() {
+          font-size: 14px;
         }
       }
 
@@ -1737,7 +1797,7 @@ video {
       width: 24px;
       height: 24px;
       z-index: -1;
-      @include laptop() {
+      @include tablet() {
         width: 20px;
         height: 20px;
       }
@@ -1787,10 +1847,20 @@ video {
   h3 {
     font-weight: 700;
     font-size: 24px;
-    @include laptop() {
-      font-size: 18px;
+
+    @media (max-width: 860px) {
+      font-size: 20px;
     }
-    @include mobile() {
+
+    @include tablet() {
+      font-size: 16px;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 380px) {
       font-size: 12px;
     }
   }
@@ -1831,9 +1901,6 @@ video {
       @include pc() {
         height: auto;
       }
-      @include mobile-min() {
-        // max-width: 300px;
-      }
 
       @include tablet() {
         border: 1px solid #04d404;
@@ -1848,7 +1915,6 @@ video {
         position: relative;
 
         @media (min-width: 1200px) {
-          // position: absolute;
           top: 0;
           left: 0;
         }
@@ -1869,17 +1935,17 @@ video {
         grid-template-columns: 1fr auto 32px;
         cursor: pointer;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
 
         @include pc() {
           height: auto;
         }
         @include tablet() {
-          gap: 30px;
+          gap: 12px;
           padding: 16px;
         }
 
-        @include mobile() {
+        @media (max-width: 620px) {
           grid-template: 1fr auto / 1fr 32px;
           gap: 10px 5px;
         }
@@ -1899,8 +1965,7 @@ video {
         &__text {
           width: fit-content;
 
-          @include mobile() {
-            // grid-area: 1/1/1/2;
+          @media (max-width: 620px) {
             grid-column-start: 2 span;
           }
         }
@@ -1914,12 +1979,7 @@ video {
             margin-left: 0;
           }
           @include tablet() {
-            font-size: 30px;
-          }
-
-          @include mobile() {
-            font-size: 24px;
-            grid-area: 2/1;
+            font-size: 20px;
           }
         }
 
@@ -2045,9 +2105,6 @@ video {
           gap: 5px;
           padding-bottom: 24px;
           border-radius: 20px;
-          @include tablet() {
-            // padding: 16px;
-          }
           @include mobile() {
             flex-direction: column;
           }
@@ -2055,7 +2112,6 @@ video {
             position: relative;
             font-size: 20px;
             font-weight: 300;
-            padding-left: 16px;
             &::before {
               position: absolute;
               content: "";
@@ -2064,10 +2120,18 @@ video {
               background-color: #f5f5f5;
               border-radius: 50%;
               top: 10px;
-              left: 0px;
+              left: -16px;
+              @include tablet() {
+                left: 0;
+              }
             }
 
             @include tablet() {
+              font-size: 16px;
+              padding-left: 16px;
+            }
+
+            @include mobile() {
               font-size: 12px;
             }
           }
@@ -2115,9 +2179,13 @@ video {
             transform: translate(-50%, -50%);
             background-color: #04d404;
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
             z-index: -1;
+            @include mobile() {
+              width: 20px;
+              height: 20px;
+            }
           }
         }
         &::before {
@@ -2125,6 +2193,9 @@ video {
         }
 
         @include tablet() {
+          font-size: 18px !important;
+        }
+        @include mobile() {
           font-size: 14px !important;
         }
       }
