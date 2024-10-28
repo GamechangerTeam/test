@@ -1623,7 +1623,7 @@ video {
   font-weight: 900;
   line-height: 28px;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pain__card__footer p {
     font-size: 14px;
     font-weight: 600;
@@ -1720,7 +1720,7 @@ video {
   height: 24px;
   z-index: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pain__days::before {
     width: 20px;
     height: 20px;

@@ -1688,7 +1688,7 @@ video {
         font-size: 20px;
         font-weight: 900;
         line-height: 28px;
-        @include tablet() {
+        @include laptop() {
           font-size: 14px;
           font-weight: 600;
         }
@@ -1737,7 +1737,7 @@ video {
       width: 24px;
       height: 24px;
       z-index: -1;
-      @include tablet() {
+      @include laptop() {
         width: 20px;
         height: 20px;
       }
