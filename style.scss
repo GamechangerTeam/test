@@ -503,11 +503,11 @@ p {
     font-weight: 900;
     font-size: 130px;
     text-align: center;
-    background: linear-gradient(180deg, #ffffff 50%, #ffffff50 100%);
+    background: linear-gradient(180deg, #FFFFFF 30.46%, rgba(255, 255, 255, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    opacity: 0.04;
+    opacity: 0.14;
     z-index: 0;
     @media (max-width: 1200px) {
       font-size: 96px;
@@ -543,14 +543,15 @@ p {
       video {
         height: 100%;
         position: absolute;
+        width: 100%;
         left: 0;
         top: 0;
         object-fit: contain;
         aspect-ratio: 1 / 1;
         mix-blend-mode: screen; /* Применяем режим смешивания */
       }
-      video {
-        width: 100%;
+      @include mobile(){
+        height: 150px;
       }
     }
 
@@ -559,6 +560,12 @@ p {
       flex-direction: column;
       align-items: center;
       gap: 10px;
+      br {
+        display: none;
+        @include laptop() {
+          display: block;
+        }
+      }
       @include mobile() {
         gap: 5px;
       }
