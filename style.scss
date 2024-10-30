@@ -682,7 +682,8 @@ p {
         }
         img {
           display: block;
-          width: 100%;
+          width: 32px;
+          height: 32px;
         }
         p {
           margin: 0 auto 0 0;
@@ -2242,11 +2243,13 @@ p {
   }
 
   &__main-img {
-    height: 100%;
     margin: 0 auto;
     display: block;
-    width: 100%;
     border-radius: 10px;
+    aspect-ratio: 16/9;
+    width: 80%;
+    height: auto;
+
     @include mobile() {
       width: 90%;
       height: auto;

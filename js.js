@@ -271,10 +271,16 @@ const certificates_swiper = new Swiper("#certificates_swiper", {
       const certificates__mainImg = document.querySelector(
         ".certificates__main-img"
       );
-      if (activeSlide) {
-        console.log("Активное изображение:", activeSlide.src);
-        certificates__mainImg.src = activeSlide.src;
+      if (this.activeIndex === 0) {
+        certificates__mainImg.style.width = "90%";
+        certificates__mainImg.style.height = "auto";
+        certificates__mainImg.style.aspectRatio = "16 / 9";
+      } else {
+        certificates__mainImg.style.width = "auto";
+        certificates__mainImg.style.height = "90%";
+        certificates__mainImg.style.aspectRatio = "2 / 3";
       }
+      certificates__mainImg.src = activeSlide.src;
     },
   },
 });

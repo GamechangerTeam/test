@@ -514,7 +514,8 @@ p {
   }
   .homepage__header__cards img {
     display: block;
-    width: 100%;
+    width: 32px;
+    height: 32px;
   }
   .homepage__header__cards p {
     margin: 0 auto 0 0;
@@ -2473,11 +2474,12 @@ p {
   justify-content: center;
 }
 .certificates__main-img {
-  height: 100%;
   margin: 0 auto;
   display: block;
-  width: 100%;
   border-radius: 10px;
+  aspect-ratio: 16/9;
+  width: 80%;
+  height: auto;
 }
 @media (max-width: 525px) {
   .certificates__main-img {
