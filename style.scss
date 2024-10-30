@@ -548,7 +548,7 @@ p {
         top: 0;
         object-fit: contain;
         aspect-ratio: 1 / 1;
-        mix-blend-mode: screen; /* Применяем режим смешивания */
+        mix-blend-mode: screen; 
       }
       @include mobile(){
         height: 150px;
@@ -682,6 +682,7 @@ p {
         }
         img {
           display: block;
+          width: 100%;
         }
         p {
           margin: 0 auto 0 0;
