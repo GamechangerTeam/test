@@ -2219,7 +2219,7 @@ p {
   .container {
     background-color: transparent;
     border: 1px solid #04d404;
-    aspect-ratio: 1/1;
+    // aspect-ratio: 1/1;
     padding: 100px 0 20px;
     width: 100%;
     max-width: 768px;
@@ -2247,7 +2247,7 @@ p {
     width: 100%;
     border-radius: 10px;
     @include mobile() {
-      width: fit-content;
+      width: 90%;
       height: auto;
       max-height: 300px;
 
