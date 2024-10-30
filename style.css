@@ -393,10 +393,13 @@ p {
   }
 }
 .homepage__header__main-text {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template: auto auto/auto 1fr;
   align-items: center;
   gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 .homepage__header__main-text br {
   display: none;
@@ -406,6 +409,12 @@ p {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  .homepage__header__main-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 525px) {
   .homepage__header__main-text {
     gap: 5px;
@@ -413,9 +422,16 @@ p {
 }
 .homepage__header h1 {
   text-align: center;
+  grid-column-start: 2 span;
 }
 .homepage__header p {
-  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 960px) {
+  .homepage__header p {
+    text-align: center;
+  }
 }
 .homepage__header__cards {
   display: grid;
@@ -508,11 +524,21 @@ p {
   }
 }
 .homepage__header__sertificats {
-  color: #04d404;
-  background-color: transparent;
-  border: none;
-  text-decoration: underline;
   font-size: 20px;
+  padding: 6px 12px;
+  background-color: #141414;
+  border: 1px solid #292929;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .homepage__header__sertificats {
+    color: #04d404;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+  }
 }
 @media (max-width: 525px) {
   .homepage__header__sertificats {
@@ -2116,9 +2142,9 @@ p {
   .consultation #video {
     width: 70%;
     position: absolute;
-    top: 50%;
+    top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: -1;
   }
 }
@@ -2437,7 +2463,7 @@ p {
   width: 100%;
   max-width: 768px;
   display: grid;
-  grid-template-rows: 50% 40%;
+  grid-template-rows: 60% 30%;
 }
 .certificates__img-wrapper {
   margin: 0 auto;
@@ -2456,7 +2482,8 @@ p {
 }
 @media (max-width: 525px) {
   .certificates__main-img {
-    width: 90%;
+    width: -moz-fit-content;
+    width: fit-content;
     height: auto;
     max-height: 300px;
   }
@@ -2475,14 +2502,22 @@ p {
   width: 100%;
   grid-row-start: 2 span;
 }
+.certificates .swiper-wrapper {
+  align-items: flex-end;
+}
 .certificates .swiper-slide {
   scale: 0.9;
   transition: 0.3s ease;
   display: grid;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
   place-items: center;
 }
 .certificates .swiper-slide-active {
   scale: 1;
+}
+.certificates .swiper-slide:first-child {
+  padding-bottom: 50px;
 }
 .certificates .swiper img {
   width: 100%;

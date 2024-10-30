@@ -556,15 +556,21 @@ p {
     }
 
     &__main-text {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template: auto auto / auto 1fr;
       align-items: center;
       gap: 10px;
+      width: fit-content;
+      margin: 0 auto;
       br {
         display: none;
         @include laptop() {
           display: block;
         }
+      }
+      @include tablet() {
+        display: flex;
+        flex-direction: column;
       }
       @include mobile() {
         gap: 5px;
@@ -572,9 +578,13 @@ p {
     }
     h1 {
       text-align: center;
+      grid-column-start: 2 span;
     }
     p {
-      text-align: center;
+      width: fit-content;
+      @include laptop() {
+        text-align: center;
+      }
     }
 
     &__cards {
@@ -682,11 +692,20 @@ p {
       }
     }
     &__sertificats {
-      color: #04d404;
-      background-color: transparent;
-      border: none;
-      text-decoration: underline;
       font-size: 20px;
+      padding: 6px 12px;
+      background-color: $gray;
+      border: 1px solid $border_gray;
+      color: rgba(255, 255, 255, 0.6);
+      border-radius: 10px;
+
+      @include tablet() {
+        color: #04d404;
+        background-color: transparent;
+        border: none;
+        text-decoration: underline;
+        padding: 0;
+      }
       @include mobile() {
         font-size: 14px;
       }
@@ -1931,9 +1950,9 @@ p {
     @include tablet() {
       width: 70%;
       position: absolute;
-      top: 50%;
+      top: 20px;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       z-index: -1;
     }
   }
@@ -2205,7 +2224,7 @@ p {
     width: 100%;
     max-width: 768px;
     display: grid;
-    grid-template-rows: 50% 40%;
+    grid-template-rows: 60% 30%;
   }
 
   &__img-wrapper {
@@ -2228,7 +2247,7 @@ p {
     width: 100%;
     border-radius: 10px;
     @include mobile() {
-      width: 90%;
+      width: fit-content;
       height: auto;
       max-height: 300px;
 
@@ -2248,13 +2267,21 @@ p {
   .swiper {
     width: 100%;
     grid-row-start: 2 span;
+    &-wrapper {
+      align-items: flex-end;
+    }
     &-slide {
       scale: 0.9;
       transition: 0.3s ease;
       display: grid;
+      height: fit-content !important;
       place-items: center;
       &-active {
         scale: 1;
+      }
+
+      &:first-child {
+        padding-bottom: 50px;
       }
     }
     img {
