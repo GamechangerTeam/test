@@ -479,11 +479,12 @@ p {
   z-index: 1;
   background-color: black;
   color: white;
+
   .container {
     position: relative;
     border-radius: 10px;
     z-index: 10;
-    padding: 50px 20px 150px;
+    padding: 0px 20px 150px;
     min-height: 100vh;
     height: 100%;
     display: grid;
@@ -532,13 +533,25 @@ p {
 
   &__header {
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: 250px auto 1fr auto / 1fr;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 50px 0 ;
+    gap: 20px;
+    @include tablet() {
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+    }
+
     &-logo-wrapper {
       height: 250px;
       aspect-ratio: 1/1;
-      margin: auto;
       position: relative;
+      margin: 0 auto;
       img,
       video {
         height: 100%;
@@ -589,11 +602,11 @@ p {
 
     &__cards {
       display: grid;
-      grid-template: repeat(2, 200px) / repeat(2, 1fr);
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
       gap: 15px;
       justify-content: center;
       width: 90%;
-      margin: 50px auto 0;
+      margin: 0 auto ;
       div {
         position: relative;
         background-color: black;
@@ -717,7 +730,6 @@ p {
       grid-template-columns: repeat(2, 270px);
       justify-content: center;
       gap: 15px;
-      margin-top: 50px;
 
       button {
         @include grayBtn();
