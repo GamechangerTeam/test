@@ -729,7 +729,7 @@ p {
         grid-template: repeat(2, 150px) / repeat(2, 1fr);
         width: 80%;
         div {
-          padding: 0;
+          padding: 0 10px;
           justify-content: center;
         }
         p {
@@ -2440,10 +2440,6 @@ p {
 
     &__main-img {
       width: 60%;
-    }
-
-    * {
-      border: 1px solid red;
     }
 
     .swiper {

@@ -572,7 +572,7 @@ p {
     width: 80%;
   }
   .homepage__header__cards div {
-    padding: 0;
+    padding: 0 10px;
     justify-content: center;
   }
   .homepage__header__cards p {
@@ -2704,9 +2704,6 @@ p {
   }
   .certificates__main-img {
     width: 60%;
-  }
-  .certificates * {
-    border: 1px solid red;
   }
   .certificates .swiper img {
     height: 150px;
